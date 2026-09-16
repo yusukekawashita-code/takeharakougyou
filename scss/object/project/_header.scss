@@ -1,0 +1,488 @@
+@use "../../global" as *;
+
+.p-header {
+  width: 100%;
+
+  &__main {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 82px;
+    background: $color-black;
+
+    @include mq($bp999) {
+      height: 72px;
+    }
+
+    @include mq($bp600) {
+      height: 68px;
+    }
+  }
+
+  &__inner {
+    max-width: 1100px;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq($bp1300) {
+      max-width: none;
+      padding-inline: 30px;
+    }
+
+    @include mq($bp1024) {
+      padding-inline: 20px;
+    }
+
+    @include mq($bp999) {
+      padding-right: 0;
+    }
+
+    @include mq($bp600) {
+      padding-left: 15px;
+    }
+  }
+
+  &__company {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    flex-shrink: 0;
+
+    @include mq($bp1300) {
+      gap: 8px;
+    }
+  }
+
+  &__logo {
+    width: 260px;
+    margin: 0;
+    flex-shrink: 0;
+
+    @include mq($bp1300) {
+      width: 230px;
+    }
+
+    @include mq($bp1024) {
+      width: 210px;
+    }
+
+    @include mq($bp999) {
+      width: 220px;
+    }
+
+    @include mq($bp600) {
+      width: 190px;
+    }
+
+    @include mq($bp399) {
+      width: 170px;
+    }
+  }
+
+  &__logo-link {
+    display: block;
+    width: 100%;
+  }
+
+  &__logo-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__license {
+    font-size: rclamp(10, 11, 360, 1920);
+    font-weight: 400;
+    line-height: 1.72;
+    color: $color-white;
+    white-space: nowrap;
+    margin-bottom: 6px;
+
+    @include mq($bp1300) {
+      margin-bottom: 4px;
+    }
+
+    @include mq($bp1024) {
+      display: none;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+
+    @include mq($bp1300) {
+      gap: 8px;
+    }
+
+    @include mq($bp999) {
+      display: none;
+    }
+  }
+
+  &__tel {
+    color: $color-white;
+  }
+
+  &__tel-link {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    color: $color-white;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  &__tel-label {
+    font-size: rclamp(14, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.04em;
+  }
+
+  &__tel-number {
+    font-size: rclamp(18, 27, 360, 1920);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+
+  &__tel-time {
+    font-size: rclamp(10, 11, 360, 1920);
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
+    margin-top: 8px;
+  }
+
+  &__estimate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 45px;
+    flex-shrink: 0;
+    background-color: #eb5a24;
+    color: $color-white;
+    font-size: rclamp(12, 14, 360, 1920);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+
+    @include mq($bp1300) {
+      width: 110px;
+    }
+
+    @include mq($bp1024) {
+      width: 100px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 45px;
+    flex-shrink: 0;
+    background-color: #00c853;
+    color: $color-white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+
+    @include mq($bp1300) {
+      width: 165px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__line-text {
+    padding-right: 24px;
+    font-size: rclamp(12, 14, 360, 1920);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+
+  &__line-icon {
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    display: block;
+    width: 36px;
+    height: auto;
+    pointer-events: none;
+    @include mq($bp1024) {
+      right: -4px;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+    height: 48px;
+    background-color: #333;
+
+    @include mq($bp999) {
+      display: none;
+    }
+  }
+
+  &__nav-list {
+    max-width: 1100px;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq($bp1300) {
+      padding-inline: 20px;
+    }
+  }
+
+  &__nav-item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      width: 1px;
+      height: 14px;
+      background-color: rgba($color-white, 0.7);
+    }
+
+    &:last-child {
+      &::after {
+        content: "";
+        width: 1px;
+        height: 14px;
+        background-color: rgba($color-white, 0.7);
+      }
+    }
+  }
+
+  &__nav-link {
+    height: 100%;
+    padding-inline: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    font-size: rclamp(12, 14, 360, 1920);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+
+    @include mq($bp1300) {
+      padding-inline: 20px;
+    }
+
+    @include mq($bp1024) {
+      padding-inline: 16px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include mq($bp999) {
+      position: relative;
+      z-index: 110;
+      width: 72px;
+      height: 72px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      background-color: #333;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    @include mq($bp600) {
+      width: 68px;
+      height: 68px;
+    }
+  }
+
+  &__hamburger-line {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: $color-white;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+
+    .p-header.is-open &:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    .p-header.is-open &:nth-child(2) {
+      opacity: 0;
+    }
+
+    .p-header.is-open &:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }
+
+  &__drawer {
+    display: none;
+
+    @include mq($bp999) {
+      position: fixed;
+      z-index: 90;
+      top: 72px;
+      right: 0;
+      width: 100%;
+      height: calc(100dvh - 72px);
+      display: block;
+      overflow-y: auto;
+      background-color: #333;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100%);
+      transition:
+        transform 0.3s ease,
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+    }
+
+    @include mq($bp600) {
+      top: 68px;
+      height: calc(100dvh - 68px);
+    }
+
+    .p-header.is-open & {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
+
+  &__drawer-nav {
+    width: 100%;
+    padding: 25px 20px 40px;
+  }
+
+  &__drawer-list {
+    width: 100%;
+    border-top: 1px solid rgba($color-white, 0.3);
+  }
+
+  &__drawer-item {
+    border-bottom: 1px solid rgba($color-white, 0.3);
+  }
+
+  &__drawer-link {
+    position: relative;
+    width: 100%;
+    min-height: 20px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      width: 7px;
+      height: 7px;
+      border-top: 1px solid $color-white;
+      border-right: 1px solid $color-white;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &__drawer-buttons {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    @include mq($bp499) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__drawer-estimate {
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eb5a24;
+    color: $color-white;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+
+  &__drawer-line {
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00c853;
+    color: $color-white;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+
+  &__drawer-tel {
+    margin-top: 25px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5px;
+    color: $color-white;
+    font-size: rclamp(22, 27, 360, 999);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.05em;
+
+    span {
+      font-size: rclamp(14, 18, 360, 999);
+      font-weight: 400;
+    }
+  }
+
+  &__drawer-time {
+    margin-top: 8px;
+    color: $color-white;
+    text-align: center;
+    font-size: rclamp(10, 11, 360, 999);
+    line-height: 1.5;
+  }
+}

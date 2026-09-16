@@ -1,0 +1,27 @@
+$bp399: 399px;
+$bp499: 499px;
+$bp600: 600px;
+$bp767: 767px;
+$bp899: 899px;
+$bp999: 999px;
+$bp1024: 1024px;
+$bp1300: 1300px;
+$bp1440: 1440px;
+
+@mixin mq($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+
+@function rclamp($min, $max, $minViewport, $maxViewport) {
+  $vwScale: ($max - $min) / ($maxViewport - $minViewport);
+  $baseOffset: $min - $minViewport * $vwScale;
+
+  $minRem: $min / 16;
+  $maxRem: $max / 16;
+  $baseOffsetRem: $baseOffset / 16;
+  $vwScaleRem: $vwScale * 100;
+
+  @return clamp(#{$minRem}rem, #{$baseOffsetRem}rem + #{$vwScaleRem}vw, #{$maxRem}rem);
+}
