@@ -424,6 +424,29 @@ a {
   background: #1a1a1a;
 }
 
+.c-button {
+  width: 175px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #fff;
+  background-color: #182980;
+  font-size: clamp(0.875rem, 0.8461538462rem + 0.1282051282vw, 1rem);
+  font-weight: 600;
+  line-height: 1;
+  transition: opacity 0.3s ease;
+}
+.c-button:hover {
+  opacity: 0.8;
+}
+.c-button__arrow {
+  font-size: clamp(1rem, 0.9711538462rem + 0.1282051282vw, 1.125rem);
+  font-weight: 300;
+  line-height: 1;
+}
+
 .p-header {
   width: 100%;
 }
@@ -1357,28 +1380,6 @@ a {
     margin-top: 40px;
   }
 }
-.p-top-strengths__button-link {
-  width: 175px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  color: #fff;
-  background-color: #182980;
-  font-size: clamp(0.875rem, 0.8461538462rem + 0.1282051282vw, 1rem);
-  font-weight: 600;
-  line-height: 1;
-  transition: opacity 0.3s ease;
-}
-.p-top-strengths__button-link:hover {
-  opacity: 0.8;
-}
-.p-top-strengths__button-arrow {
-  font-size: clamp(1rem, 0.9711538462rem + 0.1282051282vw, 1.125rem);
-  font-weight: 300;
-  line-height: 1;
-}
 
 .p-top-service {
   padding-block: 100px;
@@ -1511,28 +1512,6 @@ a {
   .p-top-service__button {
     margin-top: 25px;
   }
-}
-.p-top-service__button-link {
-  width: 175px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  color: #fff;
-  background-color: #182980;
-  font-size: clamp(0.875rem, 0.8461538462rem + 0.1282051282vw, 1rem);
-  font-weight: 600;
-  line-height: 1;
-  transition: opacity 0.3s ease;
-}
-.p-top-service__button-link:hover {
-  opacity: 0.8;
-}
-.p-top-service__button-arrow {
-  font-size: clamp(1rem, 0.9711538462rem + 0.1282051282vw, 1.125rem);
-  font-weight: 300;
-  line-height: 1;
 }
 
 .p-top-works {
@@ -1679,27 +1658,5 @@ a {
   .p-top-works__button {
     margin-top: 25px;
   }
-}
-.p-top-works__button-link {
-  width: 175px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  color: #fff;
-  background-color: #182980;
-  font-size: clamp(0.875rem, 0.8461538462rem + 0.1282051282vw, 1rem);
-  font-weight: 600;
-  line-height: 1;
-  transition: opacity 0.3s ease;
-}
-.p-top-works__button-link:hover {
-  opacity: 0.8;
-}
-.p-top-works__button-arrow {
-  font-size: clamp(1rem, 0.9711538462rem + 0.1282051282vw, 1.125rem);
-  font-weight: 300;
-  line-height: 1;
 }
 /*# sourceMappingURL=style.css.map */
