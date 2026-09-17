@@ -1180,4 +1180,203 @@ a {
     margin-top: 12px;
   }
 }
+
+.p-top-strengths {
+  padding: 85px 20px 64px;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+@media (max-width: 1024px) {
+  .p-top-strengths {
+    padding: 70px 20px 60px;
+  }
+}
+@media (max-width: 767px) {
+  .p-top-strengths {
+    padding: 60px 20px 60px;
+  }
+}
+.p-top-strengths__inner {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+.p-top-strengths__heading {
+  text-align: center;
+}
+.p-top-strengths__title {
+  font-size: clamp(1.75rem, 1.5048076923rem + 1.0897435897vw, 2.8125rem);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
+.p-top-strengths__en {
+  font-size: clamp(0.8125rem, 0.7836538462rem + 0.1282051282vw, 0.9375rem);
+  font-weight: 600;
+  line-height: 1.4;
+  color: #036e89;
+  margin-top: 8px;
+}
+.p-top-strengths__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 80px;
+}
+@media (max-width: 1024px) {
+  .p-top-strengths__list {
+    gap: 15px;
+    margin-top: 75px;
+  }
+}
+@media (max-width: 767px) {
+  .p-top-strengths__list {
+    grid-template-columns: 1fr;
+    gap: 65px;
+    margin-top: 70px;
+  }
+}
+.p-top-strengths__item {
+  position: relative;
+  min-height: 390px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 1024px) {
+  .p-top-strengths__item {
+    min-height: 380px;
+  }
+}
+@media (max-width: 767px) {
+  .p-top-strengths__item {
+    width: 100%;
+    max-width: 500px;
+    min-height: auto;
+    margin-inline: auto;
+  }
+}
+.p-top-strengths__number {
+  position: absolute;
+  top: -46px;
+  left: 50%;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #182980;
+  transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+  .p-top-strengths__number {
+    width: 72px;
+    height: 72px;
+  }
+}
+.p-top-strengths__number-label {
+  font-size: 9px;
+  font-weight: 300;
+  line-height: 1;
+}
+.p-top-strengths__number-text {
+  margin-top: 6px;
+  font-size: clamp(1.5rem, 1.2836538462rem + 0.9615384615vw, 2.4375rem);
+  font-weight: 700;
+  line-height: 1;
+}
+.p-top-strengths__item-inner {
+  padding: 55px 20px 35px;
+}
+@media (max-width: 1024px) {
+  .p-top-strengths__item-inner {
+    padding-inline: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .p-top-strengths__item-inner {
+    padding: 45px 20px 30px;
+  }
+}
+@media (max-width: 499px) {
+  .p-top-strengths__item-inner {
+    padding: 40px 20px 24px;
+  }
+}
+.p-top-strengths__icon {
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-top-strengths__icon-image {
+  display: block;
+  width: auto;
+  max-width: 100px;
+  max-height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 767px) {
+  .p-top-strengths__icon-image {
+    max-width: 82px;
+    max-height: 82px;
+  }
+}
+.p-top-strengths__item-title {
+  margin-top: 12px;
+  color: #ffcf54;
+  font-size: clamp(1.375rem, 1.2596153846rem + 0.5128205128vw, 1.875rem);
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+}
+@media (max-width: 1024px) {
+  .p-top-strengths__item-title {
+    white-space: normal;
+  }
+}
+.p-top-strengths__text {
+  font-size: clamp(0.875rem, 0.8461538462rem + 0.1282051282vw, 1rem);
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .p-top-strengths__text {
+    margin-top: 10px;
+  }
+}
+.p-top-strengths__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+@media (max-width: 767px) {
+  .p-top-strengths__button {
+    margin-top: 40px;
+  }
+}
+.p-top-strengths__button-link {
+  width: 175px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #fff;
+  background-color: #182980;
+  font-size: clamp(0.875rem, 0.8461538462rem + 0.1282051282vw, 1rem);
+  font-weight: 600;
+  line-height: 1;
+  transition: opacity 0.3s ease;
+}
+.p-top-strengths__button-link:hover {
+  opacity: 0.8;
+}
+.p-top-strengths__button-arrow {
+  font-size: clamp(1rem, 0.9711538462rem + 0.1282051282vw, 1.125rem);
+  font-weight: 300;
+  line-height: 1;
+}
 /*# sourceMappingURL=style.css.map */
