@@ -1,0 +1,43 @@
+@use "../../global" as *;
+
+.c-line-recruit {
+  padding-block: 110px;
+  background-color: $color-white;
+
+  @include mq($bp1024) {
+    padding-block: 90px;
+  }
+
+  @include mq($bp767) {
+    padding-block: 70px;
+  }
+
+  @include mq($bp499) {
+    padding-block: 50px;
+  }
+
+  &__inner {
+    width: min(850px, calc(100% - 40px));
+    margin-inline: auto;
+
+    @include mq($bp499) {
+      width: calc(100% - 30px);
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
