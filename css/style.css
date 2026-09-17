@@ -1065,4 +1065,119 @@ a {
   width: 100%;
   height: auto;
 }
+
+.p-top-about {
+  padding-block: 100px;
+}
+@media (max-width: 1024px) {
+  .p-top-about {
+    padding-block: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .p-top-about {
+    padding-block: 70px;
+  }
+}
+@media (max-width: 499px) {
+  .p-top-about {
+    padding-block: 60px;
+  }
+}
+.p-top-about__inner {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+@media (max-width: 1440px) {
+  .p-top-about__inner {
+    gap: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-top-about__inner {
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .p-top-about__inner {
+    display: block;
+  }
+}
+.p-top-about__image {
+  width: 48%;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .p-top-about__image {
+    width: 100%;
+  }
+}
+.p-top-about__image-item {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-top-about__content {
+  flex: 1;
+  max-width: 480px;
+}
+@media (max-width: 767px) {
+  .p-top-about__content {
+    margin-top: 35px;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 499px) {
+  .p-top-about__content {
+    margin-top: 28px;
+    padding: 0 16px;
+  }
+}
+.p-top-about__title {
+  margin: 0;
+  color: #182980;
+  font-size: clamp(1.5rem, 1.2403846154rem + 1.1538461538vw, 2.625rem);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+@media (max-width: 1440px) {
+  .p-top-about__title {
+    white-space: normal;
+  }
+}
+.p-top-about__text {
+  margin-top: 35px;
+  color: #333;
+  font-size: clamp(0.875rem, 0.8173076923rem + 0.2564102564vw, 1.125rem);
+  font-weight: 400;
+  line-height: 2.5;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 899px) {
+  .p-top-about__text {
+    margin-top: 20px;
+    line-height: 2;
+  }
+}
+@media (max-width: 499px) {
+  .p-top-about__text {
+    margin-top: 16px;
+  }
+}
+.p-top-about__text p {
+  margin: 0;
+}
+.p-top-about__text p + p {
+  margin-top: 14px;
+}
+@media (max-width: 767px) {
+  .p-top-about__text p + p {
+    margin-top: 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
