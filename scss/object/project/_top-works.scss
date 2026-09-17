@@ -1,0 +1,168 @@
+@use "../../global" as *;
+
+.p-top-works {
+  position: relative;
+  width: 100%;
+  min-height: 750px;
+  background-image: url("../images/top/works-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-color: rgba($color-black, 0.2);
+    pointer-events: none;
+  }
+
+  @include mq($bp1024) {
+    min-height: 650px;
+  }
+
+  @include mq($bp767) {
+    min-height: 600px;
+  }
+
+  @include mq($bp499) {
+    min-height: 540px;
+  }
+
+  &__content-bg {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: min(740px, calc(100% - 40px));
+    height: 450px;
+    background-color: $color-black;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+    @include mq($bp767) {
+      width: calc(100% - 40px);
+      height: 420px;
+    }
+
+    @include mq($bp499) {
+      width: calc(100% - 24px);
+      height: 400px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: min(835px, calc(100% - 40px));
+    padding: 42px 30px 35px;
+    color: $color-white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    @include mq($bp1024) {
+      width: min(760px, calc(100% - 60px));
+      padding-inline: 25px;
+    }
+
+    @include mq($bp767) {
+      width: calc(100% - 40px);
+      padding: 35px 20px 30px;
+    }
+
+    @include mq($bp499) {
+      width: calc(100% - 24px);
+      padding: 30px 15px 25px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: rclamp(30, 55, 360, 1920);
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-indent: 1em;
+    @include mq($bp767) {
+      text-indent: unset;
+    }
+  }
+
+  &__title-line {
+    display: block;
+  }
+
+  &__title-accent {
+    color: #ffcf54;
+  }
+
+  &__text {
+    margin-top: 25px;
+    font-size: rclamp(14, 18, 360, 1920);
+    font-weight: 700;
+    line-height: 2.4;
+    letter-spacing: 0.1em;
+
+    @include mq($bp767) {
+      margin-top: 25px;
+      line-height: 2;
+    }
+
+    @include mq($bp499) {
+      margin-top: 20px;
+    }
+
+    p {
+      margin: 0;
+
+      & + p {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+
+    @include mq($bp767) {
+      margin-top: 30px;
+    }
+
+    @include mq($bp499) {
+      margin-top: 25px;
+    }
+  }
+
+  &__button-link {
+    width: 175px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    color: $color-white;
+    background-color: $color-blue;
+    font-size: rclamp(14, 16, 360, 1920);
+    font-weight: 600;
+    line-height: 1;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__button-arrow {
+    font-size: rclamp(16, 18, 360, 1920);
+    font-weight: 300;
+    line-height: 1;
+  }
+}
