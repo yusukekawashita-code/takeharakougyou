@@ -53,16 +53,16 @@
   }
 
   &__info {
-    padding: 25px 20px 140px;
+    padding: 40px 20px 140px;
     color: $textColor;
     text-align: center;
 
     @include mq($bp767) {
-      padding: 25px 20px 100px;
+      padding: 35px 20px 100px;
     }
 
     @include mq($bp499) {
-      padding: 22px 16px 70px;
+      padding: 30px 16px 70px;
     }
   }
 
