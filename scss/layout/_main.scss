@@ -1,1 +1,13 @@
 @use "../global" as *;
+
+.l-main {
+  padding-top: 130px;
+
+  @include mq($bp999) {
+    padding-top: 72px;
+  }
+
+  @include mq($bp600) {
+    padding-top: 68px;
+  }
+}

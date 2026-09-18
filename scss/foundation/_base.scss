@@ -3,6 +3,15 @@
 html {
   font-size: 100%;
   scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+
+  @include mq($bp999) {
+    scroll-padding-top: 92px;
+  }
+
+  @include mq($bp600) {
+    scroll-padding-top: 88px;
+  }
 }
 
 body {
