@@ -24,27 +24,6 @@
     margin-inline: auto;
   }
 
-  &__heading {
-    text-align: center;
-  }
-
-  &__title {
-    margin: 0;
-    color: $textColor;
-    font-size: rclamp(28, 45, 360, 1920);
-    font-weight: 700;
-    line-height: 1.45;
-    letter-spacing: 0.1em;
-  }
-
-  &__en {
-    margin-top: 5px;
-    color: #036e89;
-    font-size: rclamp(13, 15, 360, 1920);
-    font-weight: 600;
-    line-height: 1.4;
-  }
-
   &__list {
     display: flex;
     flex-direction: column;
