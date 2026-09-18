@@ -1,0 +1,118 @@
+@use "../../global" as *;
+
+.p-top-access {
+  padding-top: 90px;
+  background-color: $color-white;
+
+  @include mq($bp1024) {
+    padding-top: 70px;
+  }
+
+  @include mq($bp767) {
+    padding-top: 60px;
+  }
+
+  @include mq($bp499) {
+    padding-top: 50px;
+  }
+
+  &__heading {
+    padding: 0 20px 40px;
+
+    @include mq($bp767) {
+      padding-bottom: 30px;
+    }
+
+    @include mq($bp499) {
+      padding: 0 16px 30px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 400px;
+
+    @include mq($bp1024) {
+      height: 340px;
+    }
+
+    @include mq($bp767) {
+      height: 300px;
+    }
+
+    @include mq($bp499) {
+      height: 260px;
+    }
+  }
+
+  &__map-frame {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  &__info {
+    padding: 25px 20px 140px;
+    color: $textColor;
+    text-align: center;
+
+    @include mq($bp767) {
+      padding: 25px 20px 100px;
+    }
+
+    @include mq($bp499) {
+      padding: 22px 16px 70px;
+    }
+  }
+
+  &__address {
+    margin: 0;
+    font-size: rclamp(15, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+  }
+
+  &__tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: fit-content;
+    margin: 8px auto 0;
+    color: $color-blue;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__tel-icon {
+    display: block;
+    width: 25px;
+    height: auto;
+    flex-shrink: 0;
+
+    @include mq($bp499) {
+      width: 22px;
+    }
+  }
+
+  &__tel-number {
+    font-size: rclamp(24, 32, 360, 1920);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+  }
+
+  &__fax {
+    margin-top: 8px;
+    font-size: rclamp(14, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+  }
+}
