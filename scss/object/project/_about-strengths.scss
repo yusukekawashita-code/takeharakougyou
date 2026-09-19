@@ -1,0 +1,272 @@
+@use "../../global" as *;
+
+.p-about-strengths {
+  padding: 120px 0 100px;
+  background-color: $color-black;
+  overflow: hidden;
+  border-bottom: 1.5px solid $color-white;
+
+  @include mq($bp1024) {
+    padding: 90px 0 90px;
+  }
+
+  @include mq($bp767) {
+    padding: 70px 20px 80px;
+  }
+
+  @include mq($bp499) {
+    padding: 60px 16px 80px;
+  }
+
+  &__inner {
+    max-width: 1500px;
+    margin-inline: auto;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__heading-title {
+    margin: 0;
+    color: $color-white;
+    font-size: rclamp(28, 45, 360, 1920);
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: 0.1em;
+  }
+
+  &__heading-en {
+    margin-top: 5px;
+    color: #0086a7;
+    font-size: rclamp(12, 15, 360, 1920);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__list {
+    margin-top: 120px;
+
+    @include mq($bp1024) {
+      margin-top: 90px;
+    }
+
+    @include mq($bp767) {
+      margin-top: 60px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    & + & {
+      margin-top: 90px;
+
+      @include mq($bp1024) {
+        margin-top: 80px;
+      }
+
+      @include mq($bp767) {
+        margin-top: 65px;
+      }
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+
+      .p-about-strengths__content {
+        padding-left: 110px;
+      }
+
+      .p-about-strengths__title {
+        &::after {
+          left: calc((100vw - 100%) * -1);
+          right: 0;
+        }
+      }
+
+      @include mq($bp1440) {
+        .p-about-strengths__content {
+          padding-left: 70px;
+        }
+      }
+
+      @include mq($bp1300) {
+        .p-about-strengths__content {
+          padding-left: 40px;
+        }
+      }
+
+      @include mq($bp1024) {
+        .p-about-strengths__content {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    @include mq($bp1300) {
+      gap: 40px;
+    }
+
+    @include mq($bp1024) {
+      gap: 25px;
+    }
+
+    @include mq($bp767) {
+      display: block;
+
+      &--reverse {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .p-about-strengths__image {
+          order: 1;
+        }
+
+        .p-about-strengths__content {
+          order: 2;
+          padding-left: 0;
+        }
+
+        .p-about-strengths__title {
+          &::after {
+            left: -20px;
+            right: -20px;
+          }
+        }
+      }
+    }
+
+    @include mq($bp499) {
+      &--reverse {
+        .p-about-strengths__title {
+          &::after {
+            left: -16px;
+            right: -16px;
+          }
+        }
+      }
+    }
+  }
+
+  &__image {
+    width: 50%;
+    flex-shrink: 0;
+    @include mq($bp1024) {
+      width: 45%;
+    }
+
+    @include mq($bp767) {
+      width: 100%;
+    }
+  }
+
+  &__image-item {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__content {
+    flex: 1;
+    min-width: 0;
+
+    @include mq($bp767) {
+      margin-top: 30px;
+    }
+
+    @include mq($bp499) {
+      margin-top: 25px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    padding-bottom: 18px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: calc((100vw - 100%) * -1);
+      height: 1px;
+      background-color: $color-blue;
+    }
+
+    @include mq($bp1024) {
+      gap: 18px;
+    }
+
+    @include mq($bp767) {
+      &::after {
+        right: -20px;
+      }
+    }
+
+    @include mq($bp499) {
+      gap: 12px;
+      padding-bottom: 10px;
+
+      &::after {
+        right: -16px;
+      }
+    }
+  }
+
+  &__number {
+    flex-shrink: 0;
+    color: #cfcfcf;
+    font-size: rclamp(40, 100, 360, 1920);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__item-title {
+    margin: 0;
+    color: #ffcf54;
+    font-size: rclamp(26, 42, 360, 1920);
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.2em;
+  }
+
+  &__text {
+    max-width: 500px;
+    margin-top: 35px;
+    color: $color-white;
+    font-size: rclamp(15, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 2.2;
+    letter-spacing: 0.1em;
+
+    @include mq($bp1024) {
+      max-width: 95%;
+      margin-top: 18px;
+      line-height: 2;
+    }
+
+    @include mq($bp499) {
+      margin-top: 16px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__button {
+    margin-top: 35px;
+
+    @include mq($bp767) {
+      margin-top: 25px;
+    }
+  }
+}

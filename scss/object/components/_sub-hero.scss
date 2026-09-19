@@ -1,0 +1,52 @@
+@use "../../global" as *;
+
+.c-sub-hero {
+  position: relative;
+  width: 100%;
+  height: 275px;
+  background-image: url("../images/common/sub-hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq($bp767) {
+    height: 250px;
+  }
+
+  @include mq($bp499) {
+    height: 200px;
+  }
+
+  &__inner {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include mq($bp499) {
+      padding: 0 16px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: $color-white;
+    font-size: rclamp(28, 45, 360, 1920);
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  &__en {
+    margin-top: 15px;
+    color: $color-white;
+    font-size: rclamp(13, 15, 360, 1920);
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+  }
+}
