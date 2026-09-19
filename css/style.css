@@ -3764,13 +3764,13 @@ a {
 @media (max-width: 767px) {
   .p-service-detail__concrete-inner {
     height: auto;
-    padding: 0 20px 60px;
+    padding: 0 20px;
     background-color: #fff;
   }
 }
 @media (max-width: 499px) {
   .p-service-detail__concrete-inner {
-    padding: 0 16px 50px;
+    padding: 0 16px;
   }
 }
 .p-service-detail__concrete-number {
@@ -3805,12 +3805,6 @@ a {
     left: 0;
     width: 170px;
     height: 140px;
-  }
-}
-@media (max-width: 499px) {
-  .p-service-detail__concrete-number {
-    width: 140px;
-    height: 115px;
   }
 }
 .p-service-detail__concrete-content {
@@ -3856,5 +3850,151 @@ a {
 }
 .p-service-detail__text--concrete {
   margin-top: 12px;
+}
+.p-service-detail__item--terrazzo {
+  padding: 100px 0;
+  background-color: #fff;
+}
+@media (max-width: 1300px) {
+  .p-service-detail__item--terrazzo {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .p-service-detail__item--terrazzo {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 767px) {
+  .p-service-detail__item--terrazzo {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 499px) {
+  .p-service-detail__item--terrazzo {
+    padding: 40px 16px;
+  }
+}
+.p-service-detail__inner--terrazzo {
+  max-width: 1440px;
+  align-items: center;
+}
+.p-service-detail__main-image--terrazzo {
+  width: 48%;
+  margin-left: 0;
+}
+@media (max-width: 1024px) {
+  .p-service-detail__main-image--terrazzo {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .p-service-detail__main-image--terrazzo {
+    width: 100%;
+    margin: 0;
+  }
+}
+.p-service-detail__main-image-item--terrazzo {
+  display: block;
+  width: 100%;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1300px) {
+  .p-service-detail__main-image-item--terrazzo {
+    height: 430px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-service-detail__main-image-item--terrazzo {
+    height: 390px;
+  }
+}
+@media (max-width: 767px) {
+  .p-service-detail__main-image-item--terrazzo {
+    height: auto;
+    aspect-ratio: 3/2;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.p-service-detail__content--terrazzo {
+  position: relative;
+  width: 50%;
+  padding: 150px 70px 0 64px;
+}
+.p-service-detail__content--terrazzo::before {
+  display: none;
+}
+@media (max-width: 1300px) {
+  .p-service-detail__content--terrazzo {
+    padding: 100px 50px 50px 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-service-detail__content--terrazzo {
+    width: 50%;
+    padding: 90px 35px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .p-service-detail__content--terrazzo {
+    width: 100%;
+    margin-top: 0;
+    padding: 80px 0 0;
+  }
+}
+@media (max-width: 499px) {
+  .p-service-detail__content--terrazzo {
+    padding-top: 65px;
+  }
+}
+.p-service-detail__number--terrazzo {
+  position: absolute;
+  z-index: 0;
+  top: -65px;
+  right: 0;
+  width: 370px;
+  height: 300px;
+  background-image: url("../images/service/service-number-04.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+  pointer-events: none;
+}
+@media (max-width: 1300px) {
+  .p-service-detail__number--terrazzo {
+    top: -50px;
+    width: 330px;
+    height: 260px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-service-detail__number--terrazzo {
+    top: -30px;
+    width: 270px;
+    height: 210px;
+  }
+}
+@media (max-width: 767px) {
+  .p-service-detail__number--terrazzo {
+    top: 10px;
+    right: -20px;
+    width: 220px;
+    height: 170px;
+  }
+}
+@media (max-width: 499px) {
+  .p-service-detail__number--terrazzo {
+    right: -16px;
+    width: 170px;
+    height: 140px;
+  }
+}
+.p-service-detail__content-inner--terrazzo {
+  position: relative;
+  z-index: 1;
+  max-width: 450px;
 }
 /*# sourceMappingURL=style.css.map */
