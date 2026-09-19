@@ -3365,4 +3365,209 @@ a {
     text-align: left;
   }
 }
+
+.p-service-detail__item {
+  position: relative;
+  overflow: hidden;
+}
+.p-service-detail__item--plastering {
+  padding: 60px 0 45px;
+  background-color: #e8e8e8;
+}
+@media (max-width: 1024px) {
+  .p-service-detail__item--plastering {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .p-service-detail__item--plastering {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 499px) {
+  .p-service-detail__item--plastering {
+    padding: 50px 16px;
+  }
+}
+.p-service-detail__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+@media (max-width: 767px) {
+  .p-service-detail__inner {
+    display: block;
+  }
+}
+.p-service-detail__content {
+  position: relative;
+  width: 47%;
+  padding-left: 130px;
+}
+.p-service-detail__content::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  left: 0;
+  width: 340px;
+  height: 320px;
+  background-image: url("../images/service/service-number-01.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  pointer-events: none;
+}
+@media (max-width: 1499px) {
+  .p-service-detail__content::before {
+    top: -130px;
+  }
+}
+@media (max-width: 1300px) {
+  .p-service-detail__content {
+    padding-left: 70px;
+  }
+  .p-service-detail__content::before {
+    top: -90px;
+    left: -15px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-service-detail__content {
+    width: 52%;
+    padding-left: 40px;
+  }
+  .p-service-detail__content::before {
+    top: -45px;
+    left: -20px;
+    width: 280px;
+    height: 265px;
+  }
+}
+@media (max-width: 767px) {
+  .p-service-detail__content {
+    width: 100%;
+    padding-left: 0;
+  }
+  .p-service-detail__content::before {
+    top: -40px;
+    left: -20px;
+    width: 230px;
+    height: 220px;
+  }
+}
+@media (max-width: 499px) {
+  .p-service-detail__content::before {
+    top: -55px;
+    left: -16px;
+    width: 190px;
+    height: 180px;
+  }
+}
+.p-service-detail__content-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 610px;
+}
+.p-service-detail__title {
+  position: relative;
+  margin: 0;
+  color: #182980;
+  font-size: clamp(1.5625rem, 1.3317307692rem + 1.0256410256vw, 2.5625rem);
+  font-weight: 700;
+  line-height: 1.5;
+}
+.p-service-detail__text {
+  position: relative;
+  margin-top: 30px;
+  color: #333;
+  font-size: clamp(0.9375rem, 0.8942307692rem + 0.1923076923vw, 1.125rem);
+  font-weight: 400;
+  line-height: 2.2;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 1024px) {
+  .p-service-detail__text {
+    margin-top: 25px;
+    line-height: 2;
+  }
+}
+@media (max-width: 767px) {
+  .p-service-detail__text {
+    margin-top: 25px;
+  }
+}
+.p-service-detail__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .p-service-detail__gallery {
+    gap: 6px;
+  }
+}
+@media (max-width: 499px) {
+  .p-service-detail__gallery {
+    gap: 4px;
+    margin-top: 20px;
+  }
+}
+.p-service-detail__gallery-item {
+  overflow: hidden;
+}
+.p-service-detail__gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-service-detail__main-image {
+  width: 50%;
+  margin-left: 60px;
+  flex-shrink: 0;
+}
+@media (max-width: 1300px) {
+  .p-service-detail__main-image {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-service-detail__main-image {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .p-service-detail__main-image {
+    width: 100%;
+    margin: 8px 0 0;
+  }
+}
+.p-service-detail__main-image-item {
+  display: block;
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1300px) {
+  .p-service-detail__main-image-item {
+    height: 520px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-service-detail__main-image-item {
+    height: 470px;
+  }
+}
+@media (max-width: 767px) {
+  .p-service-detail__main-image-item {
+    height: auto;
+    aspect-ratio: 4/3;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,203 @@
+@use "../../global" as *;
+
+.p-service-detail {
+  &__item {
+    position: relative;
+    overflow: hidden;
+
+    &--plastering {
+      padding: 60px 0 45px;
+      background-color: #e8e8e8;
+
+      @include mq($bp1024) {
+        padding: 40px 0;
+      }
+
+      @include mq($bp767) {
+        padding: 60px 20px;
+      }
+
+      @include mq($bp499) {
+        padding: 50px 16px;
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    max-width: 1440px;
+    margin-inline: auto;
+
+    @include mq($bp767) {
+      display: block;
+    }
+  }
+
+  &__content {
+    position: relative;
+    width: 47%;
+    padding-left: 130px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -90px;
+      left: 0;
+      width: 340px;
+      height: 320px;
+      background-image: url("../images/service/service-number-01.png");
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: contain;
+      pointer-events: none;
+      @include mq($bp1499) {
+        top: -130px;
+      }
+    }
+
+    @include mq($bp1300) {
+      padding-left: 70px;
+
+      &::before {
+        top: -90px;
+        left: -15px;
+      }
+    }
+
+    @include mq($bp1024) {
+      width: 52%;
+      padding-left: 40px;
+
+      &::before {
+        top: -45px;
+        left: -20px;
+        width: 280px;
+        height: 265px;
+      }
+    }
+
+    @include mq($bp767) {
+      width: 100%;
+      padding-left: 0;
+
+      &::before {
+        top: -40px;
+        left: -20px;
+        width: 230px;
+        height: 220px;
+      }
+    }
+
+    @include mq($bp499) {
+      &::before {
+        top: -55px;
+        left: -16px;
+        width: 190px;
+        height: 180px;
+      }
+    }
+  }
+
+  &__content-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 610px;
+  }
+
+  &__title {
+    position: relative;
+    margin: 0;
+    color: $color-blue;
+    font-size: rclamp(25, 41, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  &__text {
+    position: relative;
+    margin-top: 30px;
+    color: $textColor;
+    font-size: rclamp(15, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 2.2;
+    letter-spacing: 0.1em;
+
+    @include mq($bp1024) {
+      margin-top: 25px;
+      line-height: 2;
+    }
+
+    @include mq($bp767) {
+      margin-top: 25px;
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 30px;
+
+    @include mq($bp767) {
+      gap: 6px;
+    }
+
+    @include mq($bp499) {
+      gap: 4px;
+      margin-top: 20px;
+    }
+  }
+
+  &__gallery-item {
+    overflow: hidden;
+  }
+
+  &__gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__main-image {
+    width: 50%;
+    margin-left: 60px;
+    flex-shrink: 0;
+
+    @include mq($bp1300) {
+      margin-left: 40px;
+    }
+
+    @include mq($bp1024) {
+      margin-left: 30px;
+    }
+
+    @include mq($bp767) {
+      width: 100%;
+      margin: 8px 0 0;
+    }
+  }
+
+  &__main-image-item {
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+
+    @include mq($bp1300) {
+      height: 520px;
+    }
+
+    @include mq($bp1024) {
+      height: 470px;
+    }
+
+    @include mq($bp767) {
+      height: auto;
+      aspect-ratio: 4 / 3;
+    }
+  }
+}
