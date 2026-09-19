@@ -21,6 +21,23 @@
         padding: 50px 16px;
       }
     }
+
+    &--sl {
+      padding: 66px 0;
+      background-color: $color-white;
+
+      @include mq($bp1024) {
+        padding: 55px 0;
+      }
+
+      @include mq($bp767) {
+        padding: 60px 20px;
+      }
+
+      @include mq($bp499) {
+        padding: 50px 16px;
+      }
+    }
   }
 
   &__inner {
@@ -30,6 +47,11 @@
     align-items: flex-end;
     max-width: 1440px;
     margin-inline: auto;
+
+    &--sl {
+      max-width: none;
+      align-items: center;
+    }
 
     @include mq($bp767) {
       display: block;
@@ -53,7 +75,10 @@
       background-position: left top;
       background-size: contain;
       pointer-events: none;
-      @include mq($bp1499) {
+    }
+
+    @include mq($bp1499) {
+      &::before {
         top: -130px;
       }
     }
@@ -99,12 +124,94 @@
         height: 180px;
       }
     }
+
+    &--sl {
+      width: 39%;
+      padding: 0 60px 0 45px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        top: auto;
+        left: auto;
+        right: -130px;
+        bottom: -130px;
+        width: 355px;
+        height: 355px;
+        background-image: url("../images/service/service-number-02.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        pointer-events: none;
+      }
+
+      @include mq($bp1300) {
+        width: 45%;
+        padding: 0 40px;
+
+        &::before {
+          top: auto;
+          left: auto;
+          right: -80px;
+          bottom: -130px;
+          width: 290px;
+          height: 290px;
+        }
+      }
+
+      @include mq($bp1024) {
+        width: 55%;
+        padding: 0 30px;
+
+        &::before {
+          top: auto;
+          left: auto;
+          right: 30px;
+          bottom: -90px;
+          width: 250px;
+          height: 250px;
+        }
+      }
+
+      @include mq($bp767) {
+        width: 100%;
+        margin-top: 35px;
+        padding: 0;
+
+        &::before {
+          top: auto;
+          left: auto;
+          right: -60px;
+          bottom: -100px;
+          width: 230px;
+          height: 230px;
+        }
+      }
+
+      @include mq($bp499) {
+        margin-top: 30px;
+
+        &::before {
+          top: auto;
+          left: auto;
+          right: 0;
+          bottom: -75px;
+          width: 170px;
+          height: 170px;
+        }
+      }
+    }
   }
 
   &__content-inner {
     position: relative;
     z-index: 1;
     max-width: 610px;
+
+    &--sl {
+      max-width: 500px;
+    }
   }
 
   &__title {
@@ -114,6 +221,10 @@
     font-size: rclamp(25, 41, 360, 1920);
     font-weight: 700;
     line-height: 1.5;
+  }
+
+  &__title-small {
+    font-size: 0.7em;
   }
 
   &__text {
@@ -131,7 +242,7 @@
     }
 
     @include mq($bp767) {
-      margin-top: 25px;
+      margin-top: 16px;
     }
   }
 
@@ -179,6 +290,16 @@
       width: 100%;
       margin: 8px 0 0;
     }
+
+    &--sl {
+      width: 45%;
+      margin-left: 0;
+
+      @include mq($bp767) {
+        width: 100%;
+        margin: 0;
+      }
+    }
   }
 
   &__main-image-item {
@@ -198,6 +319,21 @@
     @include mq($bp767) {
       height: auto;
       aspect-ratio: 4 / 3;
+    }
+
+    &--sl {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+
+      @include mq($bp1024) {
+        height: 275px;
+      }
+
+      @include mq($bp767) {
+        height: auto;
+        aspect-ratio: 16 / 9;
+      }
     }
   }
 }
