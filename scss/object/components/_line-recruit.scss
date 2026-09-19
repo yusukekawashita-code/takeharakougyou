@@ -4,7 +4,7 @@
   padding-block: 110px;
   background-color: $color-white;
 
-  @include mq($bp1024) {
+  @include mq($bp1040) {
     padding-block: 90px;
   }
 

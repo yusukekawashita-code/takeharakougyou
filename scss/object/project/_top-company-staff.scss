@@ -15,7 +15,7 @@
     background-color: rgba(0, 0, 0, 0.7);
   }
 
-  @include mq($bp1024) {
+  @include mq($bp1040) {
     padding: 64px 20px;
   }
 
@@ -36,7 +36,7 @@
     max-width: 1000px;
     margin-inline: auto;
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       gap: 24px;
     }
 
@@ -69,7 +69,7 @@
       }
     }
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       grid-template-columns: 46% 54%;
     }
 
@@ -84,7 +84,7 @@
     justify-content: center;
     padding: 30px;
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       padding: 25px 20px;
     }
 

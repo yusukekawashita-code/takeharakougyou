@@ -9,7 +9,7 @@
   background-size: cover;
   overflow: hidden;
 
-  @include mq($bp1024) {
+  @include mq($bp1040) {
     min-height: 600px;
     background-position: 58% center;
   }
@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       min-height: 600px;
       padding-inline: 30px;
     }
@@ -53,7 +53,7 @@
     width: 650px;
     color: $color-white;
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       width: 580px;
     }
 
@@ -112,7 +112,7 @@
     gap: 40px;
     margin-top: 40px;
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       gap: 25px;
       margin-top: 30px;
     }

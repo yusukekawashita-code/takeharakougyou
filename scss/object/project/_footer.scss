@@ -6,7 +6,7 @@
   color: $color-white;
   background-color: #000;
 
-  @include mq($bp1024) {
+  @include mq($bp1040) {
     padding: 45px 30px 25px;
   }
 
@@ -28,7 +28,7 @@
     justify-content: space-between;
     gap: 80px;
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       gap: 50px;
     }
 
@@ -78,7 +78,7 @@
     gap: 90px;
     padding-top: 5px;
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       gap: 45px;
     }
 
@@ -181,7 +181,7 @@
       opacity: 0.8;
     }
 
-    @include mq($bp1440) {
+    @include mq($bp1499) {
       width: 25px;
     }
 

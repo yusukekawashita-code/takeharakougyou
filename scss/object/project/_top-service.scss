@@ -3,7 +3,7 @@
 .p-top-service {
   padding-block: 100px;
 
-  @include mq($bp1024) {
+  @include mq($bp1040) {
     padding-block: 80px;
   }
 
@@ -20,12 +20,12 @@
     align-items: center;
     gap: 60px;
 
-    @include mq($bp1440) {
+    @include mq($bp1499) {
       align-items: flex-start;
       gap: 40px;
     }
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       gap: 20px;
     }
 

@@ -3,7 +3,7 @@
 .p-top-about {
   padding-block: 100px;
 
-  @include mq($bp1024) {
+  @include mq($bp1040) {
     padding-block: 80px;
   }
 
@@ -20,11 +20,11 @@
     align-items: center;
     gap: 60px;
 
-    @include mq($bp1440) {
+    @include mq($bp1499) {
       gap: 40px;
     }
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       gap: 20px;
     }
 
@@ -72,7 +72,7 @@
     line-height: 1.4;
     letter-spacing: 0.02em;
     white-space: nowrap;
-    @include mq($bp1440) {
+    @include mq($bp1499) {
       white-space: normal;
     }
   }

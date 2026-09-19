@@ -5,8 +5,10 @@ $bp767: 767px;
 $bp899: 899px;
 $bp999: 999px;
 $bp1024: 1024px;
+$bp1040: 1040px;
 $bp1300: 1300px;
 $bp1440: 1440px;
+$bp1499: 1499px;
 
 @mixin mq($bp) {
   @media (max-width: $bp) {

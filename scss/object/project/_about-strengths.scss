@@ -6,7 +6,7 @@
   overflow: hidden;
   border-bottom: 1.5px solid $color-white;
 
-  @include mq($bp1024) {
+  @include mq($bp1040) {
     padding: 90px 0 90px;
   }
 
@@ -47,7 +47,7 @@
   &__list {
     margin-top: 120px;
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       margin-top: 90px;
     }
 
@@ -64,7 +64,7 @@
     & + & {
       margin-top: 90px;
 
-      @include mq($bp1024) {
+      @include mq($bp1040) {
         margin-top: 80px;
       }
 
@@ -87,7 +87,7 @@
         }
       }
 
-      @include mq($bp1440) {
+      @include mq($bp1499) {
         .p-about-strengths__content {
           padding-left: 70px;
         }
@@ -99,7 +99,7 @@
         }
       }
 
-      @include mq($bp1024) {
+      @include mq($bp1040) {
         .p-about-strengths__content {
           padding-left: 20px;
         }
@@ -110,7 +110,7 @@
       gap: 40px;
     }
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       gap: 25px;
     }
 
@@ -155,7 +155,7 @@
   &__image {
     width: 50%;
     flex-shrink: 0;
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       width: 45%;
     }
 
@@ -201,7 +201,7 @@
       background-color: $color-blue;
     }
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       gap: 18px;
     }
 
@@ -247,7 +247,7 @@
     line-height: 2.2;
     letter-spacing: 0.1em;
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       max-width: 95%;
       margin-top: 18px;
       line-height: 2;

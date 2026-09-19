@@ -19,7 +19,7 @@
     pointer-events: none;
   }
 
-  @include mq($bp1024) {
+  @include mq($bp1040) {
     min-height: 650px;
   }
 
@@ -66,7 +66,7 @@
     text-align: center;
     transform: translate(-50%, -50%);
 
-    @include mq($bp1024) {
+    @include mq($bp1040) {
       width: min(760px, calc(100% - 60px));
       padding-inline: 25px;
     }
