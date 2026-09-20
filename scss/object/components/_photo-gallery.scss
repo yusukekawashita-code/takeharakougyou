@@ -10,6 +10,23 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  &--four {
+    grid-template-columns: repeat(4, 1fr);
+
+    @include mq($bp767) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .c-photo-gallery__item {
+      &:last-child {
+        @include mq($bp767) {
+          grid-column: auto;
+          aspect-ratio: 1 / 1;
+        }
+      }
+    }
+  }
+
   &__item {
     overflow: hidden;
 

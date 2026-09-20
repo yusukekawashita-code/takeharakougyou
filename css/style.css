@@ -708,6 +708,20 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.c-photo-gallery--four {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 767px) {
+  .c-photo-gallery--four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .c-photo-gallery--four .c-photo-gallery__item:last-child {
+    grid-column: auto;
+    aspect-ratio: 1/1;
+  }
+}
 .c-photo-gallery__item {
   overflow: hidden;
 }
