@@ -5,7 +5,7 @@
   display: flex;
   min-height: 590px;
   overflow: hidden;
-  background: linear-gradient(149deg, #182980 0%, #036e89 89%);
+  background: linear-gradient(149deg, #182980 0%, #036e89 55%);
 
   @include mq($bp1024) {
     min-height: 500px;

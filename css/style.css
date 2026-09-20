@@ -508,6 +508,25 @@ a {
   width: min(850px, 100% - 40px);
   margin-inline: auto;
 }
+.c-line-recruit__inner .c-contact-buttons {
+  margin-top: 10px;
+  margin-bottom: 150px;
+}
+@media (max-width: 1024px) {
+  .c-line-recruit__inner .c-contact-buttons {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .c-line-recruit__inner .c-contact-buttons {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 499px) {
+  .c-line-recruit__inner .c-contact-buttons {
+    margin-bottom: 60px;
+  }
+}
 @media (max-width: 499px) {
   .c-line-recruit__inner {
     width: calc(100% - 30px);
@@ -565,7 +584,7 @@ a {
 }
 @media (max-width: 499px) {
   .c-sub-hero {
-    height: 200px;
+    height: 170px;
   }
 }
 .c-sub-hero__inner {
@@ -598,6 +617,117 @@ a {
   font-weight: 600;
   line-height: 1.4;
   text-align: center;
+}
+
+.c-contact-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .c-contact-buttons {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+.c-contact-buttons__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 85px;
+  padding: 20px 36px;
+  color: #fff;
+  background-color: #182980;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+.c-contact-buttons__button:hover {
+  opacity: 0.8;
+}
+@media (max-width: 1024px) {
+  .c-contact-buttons__button {
+    gap: 20px;
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .c-contact-buttons__button {
+    min-height: 75px;
+  }
+}
+@media (max-width: 499px) {
+  .c-contact-buttons__button {
+    min-height: 55px;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+}
+.c-contact-buttons__icon {
+  display: block;
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+.c-contact-buttons__icon--mail {
+  width: 48px;
+}
+@media (max-width: 499px) {
+  .c-contact-buttons__icon--mail {
+    width: 40px;
+  }
+}
+.c-contact-buttons__icon--tel {
+  width: 30px;
+}
+@media (max-width: 499px) {
+  .c-contact-buttons__icon--tel {
+    width: 25px;
+  }
+}
+.c-contact-buttons__text {
+  color: #fff;
+  font-size: clamp(1rem, 0.8701923077rem + 0.5769230769vw, 1.5625rem);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.c-contact-buttons__text--tel {
+  font-size: clamp(1.1875rem, 1rem + 0.8333333333vw, 2rem);
+  letter-spacing: 0.1em;
+}
+
+.c-photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .c-photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.c-photo-gallery__item {
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .c-photo-gallery__item {
+    aspect-ratio: 1/1;
+  }
+}
+@media (max-width: 767px) {
+  .c-photo-gallery__item:last-child {
+    grid-column: 1/-1;
+    aspect-ratio: 2/1;
+  }
+}
+.c-photo-gallery__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-header {
@@ -4427,7 +4557,7 @@ a {
 }
 @media (max-width: 499px) {
   .p-recruit-intro__appeal-item {
-    min-height: 120px;
+    min-height: auto;
   }
 }
 .p-recruit-intro__appeal-text {
@@ -4718,7 +4848,7 @@ a {
   display: flex;
   min-height: 590px;
   overflow: hidden;
-  background: linear-gradient(149deg, #182980 0%, #036e89 89%);
+  background: linear-gradient(149deg, #182980 0%, #036e89 55%);
 }
 @media (max-width: 1024px) {
   .p-recruit-interview {

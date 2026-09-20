@@ -132,7 +132,7 @@
     }
 
     @include mq($bp499) {
-      min-height: 120px;
+      min-height: auto;
     }
   }
 

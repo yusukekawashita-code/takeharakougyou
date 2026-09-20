@@ -20,6 +20,23 @@
     width: min(850px, calc(100% - 40px));
     margin-inline: auto;
 
+    .c-contact-buttons {
+      margin-top: 10px;
+      margin-bottom: 150px;
+
+      @include mq($bp1024) {
+        margin-bottom: 120px;
+      }
+
+      @include mq($bp767) {
+        margin-bottom: 100px;
+      }
+
+      @include mq($bp499) {
+        margin-bottom: 60px;
+      }
+    }
+
     @include mq($bp499) {
       width: calc(100% - 30px);
     }
