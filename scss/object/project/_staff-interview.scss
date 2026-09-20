@@ -1,0 +1,271 @@
+@use "../../global" as *;
+
+.p-staff-interview {
+  padding-top: 70px;
+  background-color: $color-white;
+
+  @include mq($bp767) {
+    padding-top: 65px;
+  }
+
+  @include mq($bp499) {
+    padding-top: 55px;
+  }
+
+  &__inner {
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 0 20px 90px;
+    text-align: center;
+
+    @include mq($bp767) {
+      padding: 0 20px 75px;
+    }
+
+    @include mq($bp499) {
+      padding: 0 16px 65px;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__en {
+    margin: 0;
+    color: $color-blue;
+    font-size: rclamp(50, 80, 360, 1920);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+
+  &__title {
+    margin: 18px 0 0;
+    color: #036e89;
+    font-size: rclamp(20, 28, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    @include mq($bp767) {
+      margin-top: 12px;
+    }
+  }
+
+  &__lead {
+    margin: 40px 0 0;
+    color: $textColor;
+    font-size: rclamp(14, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.1em;
+
+    @include mq($bp767) {
+      margin-top: 30px;
+    }
+
+    @include mq($bp499) {
+      margin-top: 20px;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    background-color: #e6e6e6;
+  }
+
+  &__contents {
+    max-width: 1100px;
+    margin-inline: auto;
+    padding: 1px 20px 120px;
+
+    @include mq($bp1024) {
+      padding-bottom: 100px;
+    }
+
+    @include mq($bp767) {
+      padding: 1px 20px 80px;
+    }
+
+    @include mq($bp499) {
+      padding: 1px 16px 70px;
+    }
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 30px;
+    margin-top: 100px;
+    padding: 50px;
+    border-radius: 16px;
+    background-color: $color-white;
+
+    & + & {
+      margin-top: 38px;
+      @include mq($bp499) {
+        margin-top: 20px;
+      }
+    }
+
+    @include mq($bp1024) {
+      grid-template-columns: 140px 1fr;
+      gap: 35px;
+      padding: 45px;
+    }
+
+    @include mq($bp767) {
+      display: block;
+      margin-top: 70px;
+      padding: 35px 30px 40px;
+    }
+
+    @include mq($bp499) {
+      margin-top: 60px;
+      padding: 30px 20px 35px;
+      border-radius: 12px;
+    }
+  }
+
+  &__profile {
+    @include mq($bp767) {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    @include mq($bp499) {
+      gap: 18px;
+    }
+  }
+
+  &__profile-image {
+    width: 150px;
+
+    @include mq($bp1024) {
+      width: 130px;
+    }
+
+    @include mq($bp767) {
+      width: 120px;
+      flex-shrink: 0;
+    }
+
+    @include mq($bp499) {
+      width: 100px;
+    }
+  }
+
+  &__profile-image-item {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__profile-info {
+    margin-top: 15px;
+
+    @include mq($bp767) {
+      margin-top: 0;
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin: 0;
+    color: $textColor;
+    line-height: 1;
+  }
+
+  &__name-initial {
+    font-size: rclamp(30, 38, 360, 1920);
+    font-weight: 400;
+  }
+
+  &__name-san {
+    font-size: rclamp(13, 16, 360, 1920);
+    font-weight: 400;
+  }
+
+  &__meta {
+    margin: 20px 0 0;
+    color: $textColor;
+    font-size: rclamp(13, 16, 360, 1920);
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+
+    @include mq($bp499) {
+      margin-top: 15px;
+    }
+  }
+
+  &__qa {
+    min-width: 0;
+
+    @include mq($bp767) {
+      margin-top: 35px;
+    }
+  }
+
+  &__qa-item {
+    & + & {
+      margin-top: 32px;
+
+      @include mq($bp767) {
+        margin-top: 28px;
+      }
+
+      @include mq($bp499) {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  &__question {
+    position: relative;
+    display: inline-block;
+    min-width: 210px;
+    margin: 0;
+    padding: 3px 30px 3px 8px;
+    color: $color-white;
+    background-color: $color-blue;
+    font-size: rclamp(14, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 1.35;
+    white-space: nowrap;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -20px;
+      width: 22px;
+      height: 100%;
+      background-color: $color-blue;
+      clip-path: polygon(0 0, 25% 0, 100% 100%, 0 100%);
+    }
+
+    @include mq($bp499) {
+      min-width: 0;
+      padding-right: 20px;
+
+      &::after {
+        right: -15px;
+        width: 17px;
+      }
+    }
+  }
+
+  &__answer {
+    margin: 10px 0 0;
+    color: $textColor;
+    font-size: rclamp(14, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.1em;
+  }
+}
