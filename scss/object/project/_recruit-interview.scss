@@ -1,0 +1,182 @@
+@use "../../global" as *;
+
+.p-recruit-interview {
+  position: relative;
+  display: flex;
+  min-height: 590px;
+  overflow: hidden;
+  background: linear-gradient(149deg, #182980 0%, #036e89 89%);
+
+  @include mq($bp1024) {
+    min-height: 500px;
+  }
+
+  @include mq($bp767) {
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: auto;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 52%;
+    padding: 70px 60px;
+    color: $color-white;
+    text-align: center;
+
+    @include mq($bp1300) {
+      width: 53%;
+      padding: 60px 40px;
+
+      &::after {
+        right: -80px;
+        width: 160px;
+      }
+    }
+
+    @include mq($bp1024) {
+      width: 55%;
+      padding: 50px 30px;
+
+      &::after {
+        right: -60px;
+        width: 120px;
+      }
+    }
+
+    @include mq($bp767) {
+      width: 100%;
+      padding: 55px 20px 60px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    @include mq($bp499) {
+      padding: 45px 16px 50px;
+    }
+  }
+
+  &__en {
+    margin: 0;
+    color: #d7d7d7;
+    font-size: rclamp(45, 80, 360, 1920);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.02em;
+
+    @include mq($bp767) {
+      line-height: 1.1;
+    }
+  }
+
+  &__title {
+    margin: 20px 0 0;
+    color: #ffcf54;
+    font-size: rclamp(19, 28, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    @include mq($bp767) {
+      margin-top: 15px;
+    }
+  }
+
+  &__text {
+    margin: 40px 0 0;
+    color: $color-white;
+    font-size: rclamp(14, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: 0.01em;
+
+    @include mq($bp1024) {
+      margin-top: 35px;
+    }
+
+    @include mq($bp767) {
+      margin-top: 30px;
+    }
+
+    @include mq($bp499) {
+      margin-top: 20px;
+    }
+  }
+
+  &__button {
+    margin-top: 50px;
+
+    @include mq($bp1024) {
+      margin-top: 40px;
+    }
+
+    @include mq($bp767) {
+      margin-top: 30px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    min-height: 41px;
+    border: 1px solid $color-white;
+    color: $color-white;
+    font-size: rclamp(14, 16, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+    transition:
+      color 0.3s ease,
+      background-color 0.3s ease;
+
+    &:hover {
+      color: $color-blue;
+      background-color: $color-white;
+    }
+
+    @include mq($bp499) {
+      width: 160px;
+      min-height: 36px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 53%;
+    height: 100%;
+
+    @include mq($bp1024) {
+      width: 52%;
+    }
+
+    @include mq($bp767) {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__image-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    @include mq($bp767) {
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
