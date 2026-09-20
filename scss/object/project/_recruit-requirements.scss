@@ -1,0 +1,103 @@
+@use "../../global" as *;
+
+.p-recruit-requirements {
+  padding: 100px 20px 120px;
+  background-color: $color-white;
+
+  @include mq($bp1024) {
+    padding: 85px 20px 100px;
+  }
+
+  @include mq($bp767) {
+    padding: 70px 20px 80px;
+  }
+
+  @include mq($bp499) {
+    padding: 60px 16px 70px;
+  }
+
+  &__inner {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  &__title {
+    margin: 0;
+    color: $color-blue;
+    font-size: rclamp(24, 42, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  &__list {
+    margin: 65px 0 0;
+
+    @include mq($bp1024) {
+      margin-top: 55px;
+    }
+
+    @include mq($bp767) {
+      margin-top: 45px;
+    }
+
+    @include mq($bp499) {
+      margin-top: 40px;
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    border-bottom: 5px solid $color-white;
+
+    @include mq($bp767) {
+      grid-template-columns: 120px 1fr;
+    }
+
+    @include mq($bp499) {
+      grid-template-columns: 90px 1fr;
+      border-bottom-width: 3px;
+    }
+  }
+
+  &__term,
+  &__description {
+    margin: 0;
+    padding: 18px 30px;
+    color: $textColor;
+    font-size: rclamp(13, 16, 360, 1920);
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+
+    @include mq($bp767) {
+      padding: 16px 20px;
+    }
+
+    @include mq($bp499) {
+      padding: 14px 12px;
+      line-height: 1.6;
+    }
+  }
+
+  &__term {
+    background-color: #d5dce0;
+    border-right: 4px solid $color-white;
+
+    @include mq($bp499) {
+      border-right-width: 3px;
+    }
+  }
+
+  &__description {
+    background-color: #e6e6e6;
+
+    @include mq($bp499) {
+      br {
+        display: none;
+      }
+    }
+  }
+}

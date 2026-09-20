@@ -4900,4 +4900,108 @@ a {
        object-position: center;
   }
 }
+
+.p-recruit-requirements {
+  padding: 100px 20px 120px;
+  background-color: #fff;
+}
+@media (max-width: 1024px) {
+  .p-recruit-requirements {
+    padding: 85px 20px 100px;
+  }
+}
+@media (max-width: 767px) {
+  .p-recruit-requirements {
+    padding: 70px 20px 80px;
+  }
+}
+@media (max-width: 499px) {
+  .p-recruit-requirements {
+    padding: 60px 16px 70px;
+  }
+}
+.p-recruit-requirements__inner {
+  max-width: 720px;
+  margin-inline: auto;
+}
+.p-recruit-requirements__title {
+  margin: 0;
+  color: #182980;
+  font-size: clamp(1.5rem, 1.2403846154rem + 1.1538461538vw, 2.625rem);
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.p-recruit-requirements__list {
+  margin: 65px 0 0;
+}
+@media (max-width: 1024px) {
+  .p-recruit-requirements__list {
+    margin-top: 55px;
+  }
+}
+@media (max-width: 767px) {
+  .p-recruit-requirements__list {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 499px) {
+  .p-recruit-requirements__list {
+    margin-top: 40px;
+  }
+}
+.p-recruit-requirements__row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  border-bottom: 5px solid #fff;
+}
+@media (max-width: 767px) {
+  .p-recruit-requirements__row {
+    grid-template-columns: 120px 1fr;
+  }
+}
+@media (max-width: 499px) {
+  .p-recruit-requirements__row {
+    grid-template-columns: 90px 1fr;
+    border-bottom-width: 3px;
+  }
+}
+.p-recruit-requirements__term, .p-recruit-requirements__description {
+  margin: 0;
+  padding: 18px 30px;
+  color: #333;
+  font-size: clamp(0.8125rem, 0.7692307692rem + 0.1923076923vw, 1rem);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 767px) {
+  .p-recruit-requirements__term, .p-recruit-requirements__description {
+    padding: 16px 20px;
+  }
+}
+@media (max-width: 499px) {
+  .p-recruit-requirements__term, .p-recruit-requirements__description {
+    padding: 14px 12px;
+    line-height: 1.6;
+  }
+}
+.p-recruit-requirements__term {
+  background-color: #d5dce0;
+  border-right: 4px solid #fff;
+}
+@media (max-width: 499px) {
+  .p-recruit-requirements__term {
+    border-right-width: 3px;
+  }
+}
+.p-recruit-requirements__description {
+  background-color: #e6e6e6;
+}
+@media (max-width: 499px) {
+  .p-recruit-requirements__description br {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
