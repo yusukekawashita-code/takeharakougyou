@@ -4436,4 +4436,110 @@ a {
   letter-spacing: 0.1em;
   text-align: center;
 }
+
+.p-recruit-work {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 120px 20px;
+  background-image: linear-gradient(rgba(26, 26, 26, 0.58), rgba(26, 26, 26, 0.58)), url("../images/recruit/recruit-work.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .p-recruit-work {
+    min-height: 550px;
+    padding: 70px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .p-recruit-work {
+    background-position: right;
+    min-height: 500px;
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 499px) {
+  .p-recruit-work {
+    min-height: 450px;
+    padding: 50px 16px;
+  }
+}
+.p-recruit-work__inner {
+  width: 100%;
+  max-width: 700px;
+  margin-inline: auto;
+}
+.p-recruit-work__content {
+  padding: 38px 50px 55px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+@media (max-width: 1024px) {
+  .p-recruit-work__content {
+    padding: 35px 40px 45px;
+  }
+}
+@media (max-width: 767px) {
+  .p-recruit-work__content {
+    padding: 35px 25px 40px;
+  }
+}
+@media (max-width: 499px) {
+  .p-recruit-work__content {
+    padding: 30px 18px 35px;
+  }
+}
+.p-recruit-work__title {
+  margin: 0;
+  color: #ffcf54;
+  font-size: clamp(1.5rem, 1.2403846154rem + 1.1538461538vw, 2.625rem);
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.p-recruit-work__text {
+  margin-top: 35px;
+  color: #fff;
+  font-size: clamp(0.875rem, 0.8173076923rem + 0.2564102564vw, 1.125rem);
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 767px) {
+  .p-recruit-work__text {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 499px) {
+  .p-recruit-work__text {
+    margin-top: 20px;
+  }
+  .p-recruit-work__text br {
+    display: none;
+  }
+}
+.p-recruit-work__text p {
+  margin: 0;
+}
+@media (max-width: 499px) {
+  .p-recruit-work__text p {
+    text-align: left;
+  }
+}
+.p-recruit-work__text p + p {
+  margin-top: 35px;
+}
+@media (max-width: 767px) {
+  .p-recruit-work__text p + p {
+    margin-top: 28px;
+  }
+}
+@media (max-width: 499px) {
+  .p-recruit-work__text p + p {
+    margin-top: 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

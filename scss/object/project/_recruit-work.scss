@@ -1,0 +1,102 @@
+@use "../../global" as *;
+
+.p-recruit-work {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 120px 20px;
+  background-image: linear-gradient(rgba($color-black, 0.58), rgba($color-black, 0.58)), url("../images/recruit/recruit-work.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include mq($bp1024) {
+    min-height: 550px;
+    padding: 70px 40px;
+  }
+
+  @include mq($bp767) {
+    background-position: right;
+    min-height: 500px;
+    padding: 60px 20px;
+  }
+
+  @include mq($bp499) {
+    min-height: 450px;
+    padding: 50px 16px;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  &__content {
+    padding: 38px 50px 55px;
+    color: $color-white;
+    text-align: center;
+    border: 1px solid rgba($color-white, 0.85);
+
+    @include mq($bp1024) {
+      padding: 35px 40px 45px;
+    }
+
+    @include mq($bp767) {
+      padding: 35px 25px 40px;
+    }
+
+    @include mq($bp499) {
+      padding: 30px 18px 35px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: #ffcf54;
+    font-size: rclamp(24, 42, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  &__text {
+    margin-top: 35px;
+    color: $color-white;
+    font-size: rclamp(14, 18, 360, 1920);
+    font-weight: 600;
+    line-height: 2;
+    letter-spacing: 0.1em;
+
+    @include mq($bp767) {
+      margin-top: 25px;
+    }
+
+    @include mq($bp499) {
+      margin-top: 20px;
+
+      br {
+        display: none;
+      }
+    }
+
+    p {
+      margin: 0;
+      @include mq($bp499) {
+        text-align: left;
+      }
+
+      & + p {
+        margin-top: 35px;
+
+        @include mq($bp767) {
+          margin-top: 28px;
+        }
+
+        @include mq($bp499) {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}
