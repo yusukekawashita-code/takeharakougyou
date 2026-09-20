@@ -66,7 +66,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -90px;
+      top: -130px;
       left: 0;
       width: 340px;
       height: 320px;
@@ -79,7 +79,7 @@
 
     @include mq($bp1499) {
       &::before {
-        top: -130px;
+        top: -150px;
       }
     }
 
@@ -408,7 +408,7 @@
   &__concrete-number {
     position: absolute;
     z-index: 1;
-    top: 20px;
+    top: 0;
     left: max(0px, calc((100vw - 1440px) / 2));
     width: 350px;
     height: 260px;
@@ -419,7 +419,6 @@
     pointer-events: none;
 
     @include mq($bp1300) {
-      left: 0;
       width: 300px;
       height: 240px;
     }
@@ -585,7 +584,7 @@
     &--terrazzo {
       position: absolute;
       z-index: 0;
-      top: -65px;
+      top: -105px;
       right: 0;
       width: 370px;
       height: 300px;
@@ -594,9 +593,11 @@
       background-position: right top;
       background-size: contain;
       pointer-events: none;
+      @include mq($bp1499) {
+        top: -134px;
+      }
 
       @include mq($bp1300) {
-        top: -50px;
         width: 330px;
         height: 260px;
       }
