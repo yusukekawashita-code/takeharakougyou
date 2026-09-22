@@ -1,0 +1,360 @@
+@use "../../global" as *;
+
+.p-contact-form {
+  padding: 130px 20px 200px;
+  background-color: #e6e6e6;
+
+  @include mq($bp1024) {
+    padding: 80px 20px 180px;
+  }
+
+  @include mq($bp767) {
+    padding: 65px 20px 150px;
+  }
+
+  @include mq($bp499) {
+    padding: 55px 16px 90px;
+  }
+
+  &__inner {
+    max-width: 750px;
+    margin-inline: auto;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    color: $color-blue;
+    font-size: rclamp(24, 41, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  &__lead {
+    margin: 20px 0 0;
+    color: $textColor;
+    font-size: rclamp(15, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.1em;
+  }
+
+  &__form {
+    margin-top: 80px;
+
+    @include mq($bp767) {
+      margin-top: 55px;
+    }
+
+    @include mq($bp499) {
+      margin-top: 45px;
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    gap: 30px;
+
+    & + & {
+      margin-top: 30px;
+    }
+
+    &--type {
+      align-items: start;
+    }
+
+    &--textarea {
+      align-items: start;
+    }
+
+    @include mq($bp767) {
+      grid-template-columns: 160px 1fr;
+      gap: 20px;
+    }
+
+    @include mq($bp600) {
+      display: block;
+
+      & + & {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  &__label {
+    color: $textColor;
+    font-size: rclamp(14, 16, 360, 1920);
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+
+    @include mq($bp600) {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__required {
+    color: $color-blue;
+    font-weight: 600;
+  }
+
+  &__field {
+    min-width: 0;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 0;
+    color: $textColor;
+    background-color: $color-white;
+    font: inherit;
+    outline: none;
+
+    &:focus {
+      outline: 1px solid $color-blue;
+    }
+
+    @include mq($bp499) {
+      height: 44px;
+    }
+  }
+
+  &__textarea {
+    display: block;
+    width: 100%;
+    min-height: 170px;
+    padding: 12px;
+    border: 0;
+    border-radius: 0;
+    color: $textColor;
+    background-color: $color-white;
+    font: inherit;
+    line-height: 1.7;
+    resize: vertical;
+    outline: none;
+
+    &:focus {
+      outline: 1px solid $color-blue;
+    }
+
+    @include mq($bp499) {
+      min-height: 160px;
+    }
+  }
+
+  &__radio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 20px;
+
+    @include mq($bp600) {
+      gap: 10px 18px;
+    }
+
+    @include mq($bp499) {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      justify-content: start;
+    }
+  }
+
+  &__radio {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    color: $textColor;
+    font-size: rclamp(13, 16, 360, 1920);
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+
+    input {
+      width: 15px;
+      height: 15px;
+      margin: 0;
+      accent-color: $color-blue;
+      background-color: transparent;
+      cursor: pointer;
+      appearance: auto;
+    }
+  }
+
+  &__privacy {
+    margin-top: 40px;
+
+    @include mq($bp767) {
+      margin-top: 35px;
+    }
+
+    @include mq($bp499) {
+      margin-top: 30px;
+    }
+  }
+
+  &__privacy-scroll {
+    height: 600px;
+    padding: 25px 20px;
+    overflow-y: auto;
+    color: $textColor;
+    background-color: $color-white;
+    font-size: rclamp(13, 15, 360, 1920);
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+
+    @include mq($bp767) {
+      height: 500px;
+      padding: 22px 18px;
+    }
+
+    @include mq($bp499) {
+      height: 420px;
+      padding: 20px 16px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    h4 {
+      margin: 35px 0 5px;
+      color: $color-blue;
+      font-size: inherit;
+      font-weight: 700;
+      line-height: 1.6;
+
+      @include mq($bp499) {
+        margin-top: 30px;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      margin: 0;
+
+      &::before {
+        content: "・";
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #c8c8c8;
+    }
+  }
+
+  &__privacy-title {
+    margin: 0 0 5px;
+    color: $color-blue;
+    font-size: rclamp(15, 18, 360, 1920);
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  &__privacy-company {
+    margin-top: 35px !important;
+
+    @include mq($bp499) {
+      margin-top: 30px !important;
+    }
+  }
+
+  &__privacy-date {
+    margin-top: 30px !important;
+  }
+
+  &__agreement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    margin-top: 35px;
+    color: $textColor;
+    font-size: rclamp(14, 16, 360, 1920);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+
+    @include mq($bp499) {
+      margin-top: 25px;
+    }
+
+    input {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+      flex-shrink: 0;
+      accent-color: $color-blue;
+      appearance: auto;
+      cursor: pointer;
+    }
+  }
+
+  &__submit {
+    margin-top: 35px;
+
+    @include mq($bp767) {
+      margin-top: 30px;
+    }
+
+    @include mq($bp499) {
+      margin-top: 25px;
+    }
+  }
+
+  &__submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    min-height: 70px;
+    padding: 4px 16px;
+    border: 0;
+    border-radius: 0;
+    color: $color-white;
+    background-color: $color-blue;
+    font: inherit;
+    font-size: rclamp(20, 28, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @include mq($bp600) {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    @include mq($bp499) {
+      min-height: 65px;
+    }
+  }
+}
