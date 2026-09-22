@@ -1,0 +1,206 @@
+@use "../../global" as *;
+
+.p-business-partners {
+  background-color: $color-white;
+
+  &__lead {
+    padding: 80px 20px 65px;
+
+    @include mq($bp1024) {
+      padding: 65px 20px 55px;
+    }
+
+    @include mq($bp767) {
+      padding: 55px 20px 50px;
+    }
+
+    @include mq($bp499) {
+      padding: 45px 16px 40px;
+    }
+  }
+
+  &__lead-title {
+    margin: 0;
+    color: $color-blue;
+    font-size: rclamp(24, 51, 360, 1920);
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.14em;
+    text-align: center;
+  }
+
+  &__recruit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $color-black;
+
+    @include mq($bp767) {
+      display: flex;
+      flex-direction: column-reverse;
+      min-height: auto;
+    }
+  }
+
+  &__recruit-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 65px 20px;
+
+    @include mq($bp1024) {
+      padding: 45px 40px 45px 20px;
+    }
+
+    @include mq($bp767) {
+      justify-content: center;
+      padding: 50px 20px;
+    }
+
+    @include mq($bp499) {
+      padding: 45px 16px;
+    }
+  }
+
+  &__recruit-inner {
+    width: 100%;
+    max-width: 480px;
+
+    @include mq($bp767) {
+      max-width: 500px;
+    }
+  }
+
+  &__recruit-lead {
+    margin: 0;
+    color: #ffcf54;
+    font-size: rclamp(17, 24, 360, 1920);
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.1em;
+
+    @include mq($bp499) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__recruit-list {
+    margin: 35px 0 0;
+    padding: 0;
+    list-style: none;
+
+    @include mq($bp767) {
+      margin-top: 30px;
+    }
+  }
+
+  &__recruit-item {
+    position: relative;
+    padding-left: 30px;
+    color: $color-white;
+    font-size: rclamp(14, 17, 360, 1920);
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.4em;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      border: 1px solid #ffcf54;
+    }
+
+    & + & {
+      margin-top: 14px;
+    }
+  }
+
+  &__image {
+    min-width: 0;
+  }
+
+  &__image-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__relationship {
+    padding: 100px 20px 100px;
+
+    @include mq($bp1024) {
+      padding: 75px 20px 85px;
+    }
+
+    @include mq($bp767) {
+      padding: 65px 20px 75px;
+    }
+
+    @include mq($bp499) {
+      padding: 55px 16px 65px;
+    }
+  }
+
+  &__relationship-inner {
+    max-width: 900px;
+    margin-inline: auto;
+  }
+
+  &__relationship-title {
+    margin: 0;
+    color: $color-blue;
+    font-size: rclamp(24, 42, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  &__relationship-list {
+    margin-top: 45px;
+
+    @include mq($bp767) {
+      margin-top: 35px;
+    }
+
+    @include mq($bp499) {
+      margin-top: 30px;
+    }
+  }
+
+  &__relationship-item {
+    text-align: center;
+
+    & + & {
+      margin-top: 38px;
+
+      @include mq($bp767) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  &__relationship-item-title {
+    margin: 0;
+    color: $color-blue;
+    font-size: rclamp(19, 26, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+  }
+
+  &__relationship-text {
+    margin: 5px 0 0;
+    color: $textColor;
+    font-size: rclamp(15, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.08em;
+  }
+}
