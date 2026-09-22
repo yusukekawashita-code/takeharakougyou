@@ -5963,4 +5963,203 @@ a {
   line-height: 1.8;
   letter-spacing: 0.08em;
 }
+
+.p-business-partners-growth {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 100px 0;
+  background-color: #e6e6e6;
+}
+@media (max-width: 1024px) {
+  .p-business-partners-growth {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 767px) {
+  .p-business-partners-growth {
+    display: block;
+    padding: 0;
+  }
+}
+.p-business-partners-growth__image {
+  width: 100%;
+  height: 540px;
+}
+@media (max-width: 1300px) {
+  .p-business-partners-growth__image {
+    height: 480px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-business-partners-growth__image {
+    height: 430px;
+  }
+}
+@media (max-width: 767px) {
+  .p-business-partners-growth__image {
+    height: auto;
+  }
+}
+.p-business-partners-growth__image-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (max-width: 767px) {
+  .p-business-partners-growth__image-item {
+    height: auto;
+    aspect-ratio: 3/2;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.p-business-partners-growth__content {
+  display: flex;
+  align-items: center;
+  padding: 40px 70px;
+}
+@media (max-width: 1300px) {
+  .p-business-partners-growth__content {
+    padding: 40px 55px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-business-partners-growth__content {
+    padding: 35px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .p-business-partners-growth__content {
+    padding: 55px 20px 65px;
+  }
+}
+@media (max-width: 499px) {
+  .p-business-partners-growth__content {
+    padding: 45px 16px 55px;
+  }
+}
+.p-business-partners-growth__content-inner {
+  width: 100%;
+  max-width: 480px;
+}
+.p-business-partners-growth__title {
+  margin: 0;
+  color: #182980;
+  font-size: clamp(1.5rem, 1.2836538462rem + 0.9615384615vw, 2.4375rem);
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+@media (max-width: 1300px) {
+  .p-business-partners-growth__title {
+    white-space: normal;
+  }
+}
+.p-business-partners-growth__text {
+  margin-top: 35px;
+  color: #333;
+  font-size: clamp(0.875rem, 0.8461538462rem + 0.1282051282vw, 1rem);
+  font-weight: 400;
+  line-height: 2.7;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 1024px) {
+  .p-business-partners-growth__text {
+    margin-top: 30px;
+    line-height: 2.2;
+  }
+}
+@media (max-width: 767px) {
+  .p-business-partners-growth__text {
+    margin-top: 25px;
+    line-height: 2;
+  }
+  .p-business-partners-growth__text br {
+    display: none;
+  }
+}
+.p-business-partners-growth__text p {
+  margin: 0;
+}
+.p-business-partners-growth__text p + p {
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .p-business-partners-growth__text p + p {
+    margin-top: 20px;
+  }
+}
+
+.p-business-partners-contact {
+  padding: 90px 20px 80px;
+  background-color: #fff;
+}
+@media (max-width: 1024px) {
+  .p-business-partners-contact {
+    padding: 85px 20px 70px;
+  }
+}
+@media (max-width: 767px) {
+  .p-business-partners-contact {
+    padding: 70px 20px 60px;
+  }
+}
+@media (max-width: 499px) {
+  .p-business-partners-contact {
+    padding: 60px 16px 50px;
+  }
+}
+.p-business-partners-contact__inner {
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+}
+.p-business-partners-contact__heading {
+  text-align: center;
+}
+.p-business-partners-contact__title {
+  margin: 0;
+  color: #333;
+  font-size: clamp(1.5rem, 1.1971153846rem + 1.3461538462vw, 2.8125rem);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+}
+.p-business-partners-contact__en {
+  margin: 8px 0 0;
+  color: #036e89;
+  font-size: clamp(0.8125rem, 0.7836538462rem + 0.1282051282vw, 0.9375rem);
+  font-weight: 700;
+  line-height: 1.4;
+}
+.p-business-partners-contact__text {
+  margin-top: 45px;
+  color: #333;
+  font-size: clamp(0.9375rem, 0.8942307692rem + 0.1923076923vw, 1.125rem);
+  font-weight: 400;
+  line-height: 2.5;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 899px) {
+  .p-business-partners-contact__text {
+    line-height: 2;
+  }
+}
+@media (max-width: 767px) {
+  .p-business-partners-contact__text {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 499px) {
+  .p-business-partners-contact__text {
+    margin-top: 22px;
+    text-align: left;
+  }
+}
 /*# sourceMappingURL=style.css.map */
