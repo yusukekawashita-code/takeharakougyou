@@ -1,0 +1,114 @@
+@use "../../global" as *;
+
+.p-contact {
+  background-color: $color-white;
+
+  &__lead {
+    padding: 65px 20px 60px;
+    background-color: $color-white;
+
+    @include mq($bp767) {
+      padding: 55px 20px;
+    }
+
+    @include mq($bp499) {
+      padding: 45px 16px;
+    }
+  }
+
+  &__lead-inner {
+    max-width: 900px;
+    margin-inline: auto;
+  }
+
+  &__lead-text {
+    margin: 0;
+    color: $textColor;
+    font-size: rclamp(15, 18, 360, 1920);
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @include mq($bp499) {
+      text-align: left;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__consultation {
+    padding: 50px 20px 50px;
+    background-color: $color-black;
+
+    @include mq($bp499) {
+      padding: 50px 16px 55px;
+    }
+  }
+
+  &__consultation-inner {
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+  &__consultation-title {
+    margin: 0;
+    color: #ffcf54;
+    font-size: rclamp(24, 41, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__consultation-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 70px;
+    margin: 40px 0 0;
+    padding: 0;
+    list-style: none;
+
+    @include mq($bp767) {
+      gap: 20px 35px;
+      margin-top: 40px;
+    }
+
+    @include mq($bp600) {
+      grid-template-columns: 1fr;
+      gap: 18px;
+      max-width: 400px;
+      margin: 35px auto 0;
+    }
+  }
+
+  &__consultation-item {
+    position: relative;
+    padding-left: 35px;
+    color: $color-white;
+    font-size: rclamp(14, 16, 360, 1920);
+    font-weight: 400;
+    line-height: 2.3;
+    letter-spacing: 0.1em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.7em;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $color-white;
+    }
+
+    @include mq($bp499) {
+      padding-left: 30px;
+
+      &::before {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@use "../../global" as *;
+
+.p-contact-direct {
+  padding: 75px 20px 70px;
+  background-color: $color-white;
+
+  @include mq($bp1024) {
+    padding: 75px 20px 85px;
+  }
+
+  @include mq($bp767) {
+    padding: 65px 20px 75px;
+  }
+
+  @include mq($bp499) {
+    padding: 55px 16px 65px;
+  }
+
+  &__inner {
+    max-width: 900px;
+    margin-inline: auto;
+  }
+
+  &__title {
+    margin: 0;
+    color: $color-blue;
+    font-size: rclamp(24, 41, 360, 1920);
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 65px;
+
+    @include mq($bp1024) {
+      gap: 20px;
+      margin-top: 55px;
+    }
+
+    @include mq($bp767) {
+      grid-template-columns: 1fr;
+      gap: 25px;
+      max-width: 600px;
+      margin: 45px auto 0;
+    }
+
+    @include mq($bp499) {
+      gap: 20px;
+      margin-top: 35px;
+    }
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+
+    &:hover {
+      opacity: 0.85;
+      transform: translateY(-3px);
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
