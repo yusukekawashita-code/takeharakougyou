@@ -28,7 +28,7 @@
   &__heading-title {
     margin: 0;
     color: $textColor;
-    font-size: rclamp(26, 45, 360, 1920);
+    font-size: rclamp(26, 45, 375, 1499);
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.1em;
@@ -37,7 +37,7 @@
   &__heading-en {
     margin: 5px 0 0;
     color: #036e89;
-    font-size: rclamp(13, 15, 360, 1920);
+    font-size: rclamp(13, 15, 375, 1499);
     font-weight: 600;
     line-height: 1.4;
   }
@@ -45,7 +45,7 @@
   &__catch {
     margin: 60px 0 0;
     color: $color-blue;
-    font-size: rclamp(24, 58, 360, 1920);
+    font-size: rclamp(24, 58, 375, 1499);
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.14em;
@@ -121,7 +121,7 @@
 
   &__text {
     color: $textColor;
-    font-size: rclamp(14, 16, 360, 1920);
+    font-size: rclamp(14, 16, 375, 1499);
     font-weight: 400;
     line-height: 2.125;
     letter-spacing: 0.1em;
@@ -162,7 +162,7 @@
   }
 
   &__position {
-    font-size: rclamp(14, 16, 360, 1920);
+    font-size: rclamp(14, 16, 375, 1499);
     font-weight: 400;
     line-height: 2.125;
     @include mq($bp899) {
@@ -171,7 +171,7 @@
   }
 
   &__name {
-    font-size: rclamp(20, 26, 360, 1920);
+    font-size: rclamp(20, 26, 375, 1499);
     font-weight: 400;
     line-height: 2.125;
     letter-spacing: 0.1em;

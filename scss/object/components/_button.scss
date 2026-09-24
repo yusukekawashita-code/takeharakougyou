@@ -9,7 +9,7 @@
   gap: 14px;
   color: $color-white;
   background-color: $color-blue;
-  font-size: rclamp(14, 16, 360, 1920);
+  font-size: rclamp(14, 16, 375, 1499);
   font-weight: 600;
   line-height: 1;
   transition: opacity 0.3s ease;
@@ -19,7 +19,7 @@
   }
 
   &__arrow {
-    font-size: rclamp(16, 18, 360, 1920);
+    font-size: rclamp(16, 18, 375, 1499);
     font-weight: 300;
     line-height: 1;
   }

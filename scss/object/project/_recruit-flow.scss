@@ -24,7 +24,7 @@
   &__title {
     margin: 0;
     color: $color-blue;
-    font-size: rclamp(24, 42, 360, 1920);
+    font-size: rclamp(24, 42, 375, 1499);
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -145,7 +145,7 @@
 
   &__label {
     color: $color-white;
-    font-size: rclamp(14, 16, 360, 1920);
+    font-size: rclamp(14, 16, 375, 1499);
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.1em;
@@ -154,7 +154,7 @@
   &__time {
     margin: 20px 0 0;
     color: $textColor;
-    font-size: rclamp(14, 16, 360, 1920);
+    font-size: rclamp(14, 16, 375, 1499);
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: 0.1em;

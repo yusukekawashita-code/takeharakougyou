@@ -22,7 +22,7 @@
   &__lead-title {
     margin: 0;
     color: $color-blue;
-    font-size: rclamp(24, 51, 360, 1920);
+    font-size: rclamp(24, 51, 375, 1499);
     font-weight: 700;
     line-height: 1.4;
     letter-spacing: 0.14em;
@@ -73,7 +73,7 @@
   &__recruit-lead {
     margin: 0;
     color: #ffcf54;
-    font-size: rclamp(17, 24, 360, 1920);
+    font-size: rclamp(17, 24, 375, 1499);
     font-weight: 700;
     line-height: 1.9;
     letter-spacing: 0.1em;
@@ -99,7 +99,7 @@
     position: relative;
     padding-left: 30px;
     color: $color-white;
-    font-size: rclamp(14, 17, 360, 1920);
+    font-size: rclamp(14, 17, 375, 1499);
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.1em;
@@ -155,7 +155,7 @@
   &__relationship-title {
     margin: 0;
     color: $color-blue;
-    font-size: rclamp(24, 42, 360, 1920);
+    font-size: rclamp(24, 42, 375, 1499);
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -189,7 +189,7 @@
   &__relationship-item-title {
     margin: 0;
     color: $color-blue;
-    font-size: rclamp(19, 26, 360, 1920);
+    font-size: rclamp(19, 26, 375, 1499);
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.05em;
@@ -198,7 +198,7 @@
   &__relationship-text {
     margin: 5px 0 0;
     color: $textColor;
-    font-size: rclamp(15, 18, 360, 1920);
+    font-size: rclamp(15, 18, 375, 1499);
     font-weight: 400;
     line-height: 1.8;
     letter-spacing: 0.08em;

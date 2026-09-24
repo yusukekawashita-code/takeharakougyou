@@ -106,7 +106,7 @@
   &__title {
     margin: 0;
     color: #ffcf54;
-    font-size: rclamp(28, 42, 360, 1920);
+    font-size: rclamp(28, 42, 375, 1499);
     font-weight: 700;
     line-height: 1.4;
     letter-spacing: 0.02em;
@@ -115,7 +115,7 @@
   &__text {
     margin-top: 35px;
     color: $color-white;
-    font-size: rclamp(15, 18, 360, 1920);
+    font-size: rclamp(15, 18, 375, 1499);
     font-weight: 400;
     line-height: 2;
     letter-spacing: 0.1em;
@@ -149,7 +149,7 @@
   &__lead-text {
     margin: 0;
     color: $textColor;
-    font-size: rclamp(24, 44, 360, 1920);
+    font-size: rclamp(24, 44, 375, 1499);
     font-weight: 700;
     line-height: 1.4;
     letter-spacing: 0.06em;

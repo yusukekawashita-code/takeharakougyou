@@ -94,7 +94,7 @@
   }
 
   &__license {
-    font-size: rclamp(10, 11, 360, 1920);
+    font-size: rclamp(10, 11, 375, 1499);
     font-weight: 400;
     line-height: 1.72;
     color: $color-white;
@@ -139,21 +139,21 @@
   }
 
   &__tel-label {
-    font-size: rclamp(14, 18, 360, 1920);
+    font-size: rclamp(14, 18, 375, 1499);
     font-weight: 400;
     line-height: 1;
     letter-spacing: 0.04em;
   }
 
   &__tel-number {
-    font-size: rclamp(18, 27, 360, 1920);
+    font-size: rclamp(18, 27, 375, 1499);
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.05em;
   }
 
   &__tel-time {
-    font-size: rclamp(10, 11, 360, 1920);
+    font-size: rclamp(10, 11, 375, 1499);
     font-weight: 400;
     line-height: 1;
     white-space: nowrap;
@@ -169,7 +169,7 @@
     flex-shrink: 0;
     background-color: #eb5a24;
     color: $color-white;
-    font-size: rclamp(12, 14, 360, 1920);
+    font-size: rclamp(12, 14, 375, 1499);
     font-weight: 600;
     line-height: 1;
     letter-spacing: 0.08em;
@@ -213,7 +213,7 @@
 
   &__line-text {
     padding-right: 24px;
-    font-size: rclamp(12, 14, 360, 1920);
+    font-size: rclamp(12, 14, 375, 1499);
     font-weight: 600;
     line-height: 1;
     letter-spacing: 0.08em;
@@ -286,7 +286,7 @@
     align-items: center;
     justify-content: center;
     color: $color-white;
-    font-size: rclamp(12, 14, 360, 1920);
+    font-size: rclamp(12, 14, 375, 1499);
     font-weight: 400;
     line-height: 1;
     letter-spacing: 0.06em;

@@ -65,7 +65,7 @@
 
   &__title {
     margin: 0;
-    font-size: rclamp(30, 48, 360, 1920);
+    font-size: rclamp(30, 48, 375, 1499);
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.1em;
@@ -78,7 +78,7 @@
 
   &__text {
     margin-top: 25px;
-    font-size: rclamp(16, 20, 360, 1920);
+    font-size: rclamp(16, 20, 375, 1499);
     font-weight: 600;
     line-height: 2;
     letter-spacing: 0.1em;

@@ -68,7 +68,7 @@
 
   &__address {
     margin: 0;
-    font-size: rclamp(15, 18, 360, 1920);
+    font-size: rclamp(15, 18, 375, 1499);
     font-weight: 400;
     line-height: 1.6;
     letter-spacing: 0.1em;
@@ -102,7 +102,7 @@
   }
 
   &__tel-number {
-    font-size: rclamp(24, 32, 360, 1920);
+    font-size: rclamp(24, 32, 375, 1499);
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.08em;
@@ -110,7 +110,7 @@
 
   &__fax {
     margin-top: 8px;
-    font-size: rclamp(14, 18, 360, 1920);
+    font-size: rclamp(14, 18, 375, 1499);
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.1em;
