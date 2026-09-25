@@ -1247,10 +1247,19 @@ a {
 }
 .p-header__drawer-list {
   width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 .p-header__drawer-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.p-header__drawer-item::marker {
+  content: "";
 }
 .p-header__drawer-link {
   position: relative;
