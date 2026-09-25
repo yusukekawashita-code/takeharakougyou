@@ -1,0 +1,320 @@
+@use "../../global" as *;
+
+.p-news-archive {
+  padding: 110px 20px 120px;
+  background-color: #e6e6e6;
+
+  @include mq($bp1024) {
+    padding: 90px 20px 100px;
+  }
+
+  @include mq($bp767) {
+    padding: 70px 20px 80px;
+  }
+
+  @include mq($bp499) {
+    padding: 60px 16px 70px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 700px) 270px;
+    align-items: start;
+    gap: 65px;
+    max-width: 1040px;
+    margin-inline: auto;
+
+    @include mq($bp1024) {
+      grid-template-columns: minmax(0, 1fr) 240px;
+      gap: 40px;
+    }
+
+    @include mq($bp767) {
+      display: block;
+    }
+  }
+
+  &__main {
+    min-width: 0;
+  }
+
+  &__list {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: $color-white;
+
+    @include mq($bp499) {
+      border-radius: 8px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding: 45px 60px;
+
+    & + & {
+      border-top: 1px solid #d5d5d5;
+    }
+
+    @include mq($bp1024) {
+      padding: 40px;
+    }
+
+    @include mq($bp767) {
+      padding: 35px 30px;
+    }
+
+    @include mq($bp499) {
+      padding: 30px 20px;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @include mq($bp499) {
+      gap: 10px;
+    }
+  }
+
+  &__category {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 78px;
+    min-height: 24px;
+    padding: 3px 12px;
+    color: $color-white;
+    background-color: $color-blue;
+    font-size: rclamp(11, 13, 360, 1440);
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  &__date {
+    color: $textColor;
+    font-size: rclamp(13, 16, 360, 1440);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+  }
+
+  &__title {
+    position: relative;
+    margin: 18px 0 0;
+    padding-bottom: 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      background-color: #e6a719;
+    }
+  }
+
+  &__title-link {
+    color: $textColor;
+    font-size: rclamp(19, 24, 360, 1440);
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+
+  &__excerpt {
+    margin: 25px 0 0;
+    color: $textColor;
+    font-size: rclamp(14, 16, 360, 1440);
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.08em;
+
+    @include mq($bp499) {
+      margin-top: 20px;
+      line-height: 1.9;
+    }
+  }
+
+  &__more {
+    margin-top: 25px;
+    text-align: right;
+  }
+
+  &__more-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+    min-height: 32px;
+    padding: 5px 15px;
+    color: $color-white;
+    background-color: $color-blue;
+    font-size: rclamp(12, 14, 360, 1440);
+    font-weight: 400;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 50px;
+
+    @include mq($bp499) {
+      margin-top: 40px;
+    }
+  }
+
+  &__page-number,
+  &__page-next {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid $color-blue;
+    color: $color-blue;
+    background-color: $color-white;
+    font-size: rclamp(12, 14, 360, 1440);
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    transition:
+      color 0.3s ease,
+      background-color 0.3s ease;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-blue;
+    }
+
+    &.is-current {
+      color: $color-white;
+      background-color: $color-blue;
+    }
+  }
+
+  &__page-next {
+    min-width: 75px;
+  }
+
+  &__sidebar {
+    min-width: 0;
+
+    @include mq($bp767) {
+      max-width: 600px;
+      margin: 60px auto 0;
+    }
+
+    @include mq($bp499) {
+      margin-top: 50px;
+    }
+  }
+
+  &__search {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 80px;
+    gap: 8px;
+  }
+
+  &__search-input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 5px 10px;
+    border: 1px solid #777;
+    border-radius: 0;
+    color: $textColor;
+    background-color: $color-white;
+    font: inherit;
+    outline: none;
+
+    &::placeholder {
+      color: #999;
+    }
+
+    &:focus {
+      border-color: $color-blue;
+    }
+  }
+
+  &__search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 0 10px;
+    border: 0;
+    color: $color-white;
+    background-color: $color-blue;
+    font-size: rclamp(12, 14, 360, 1440);
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__sidebar-block {
+    padding: 28px 0 25px;
+    border-bottom: 1px solid #aaa;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__sidebar-title {
+    margin: 0;
+    color: $color-blue;
+    font-size: rclamp(14, 17, 360, 1440);
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  &__sidebar-list {
+    margin: 5px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__sidebar-item {
+    & + & {
+      margin-top: 4px;
+    }
+  }
+
+  &__sidebar-link {
+    color: $textColor;
+    font-size: rclamp(13, 15, 360, 1440);
+    font-weight: 400;
+    line-height: 1.6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+}

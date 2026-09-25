@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>お知らせ詳細 | 株式会社 竹原工業</title>
+  <title>お知らせ一覧 | 株式会社 竹原工業</title>
   <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow">
@@ -151,98 +151,150 @@
       </div>
     </section>
 
-    <section class="p-news-detail">
-      <div class="p-news-detail__inner">
-        <main class="p-news-detail__main">
-          <article class="p-news-detail__article">
-            <header class="p-news-detail__header">
-              <h1 class="p-news-detail__title">
-                ホームページをリニューアルしました
-              </h1>
+    <section class="p-news-archive">
+      <div class="p-news-archive__inner">
+        <main class="p-news-archive__main">
+          <div class="p-news-archive__list">
 
-              <div class="p-news-detail__meta">
-                <span class="p-news-detail__category">お知らせ</span>
-                <time class="p-news-detail__date" datetime="2026-09-01">
-                  2026.09.00
+            <article class="p-news-archive__item">
+              <div class="p-news-archive__meta">
+                <span class="p-news-archive__category">お知らせ</span>
+                <time class="p-news-archive__date" datetime="2026-09-01">
+                  2026.09.01
                 </time>
               </div>
-            </header>
 
-            <div class="p-news-detail__thumbnail">
-              <img src="images/common/news-sample.jpg" alt="ホームページリニューアルのお知らせ" class="p-news-detail__thumbnail-image">
-            </div>
+              <h2 class="p-news-archive__title">
+                <a href="#" class="p-news-archive__title-link">
+                  ホームページをリニューアルしました
+                </a>
+              </h2>
 
-            <div class="p-news-detail__body">
-              <p>
-                本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。
-                本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。
-                本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。
-                本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。
+              <p class="p-news-archive__excerpt">
+                この度、株式会社竹原工業のホームページをリニューアルいたしました。
+                今後とも皆様により分かりやすく情報をお届けできるよう、
+                内容の充実を図ってまいります。
               </p>
-            </div>
 
-            <nav class="p-news-detail__pagination">
-              <a href="#" class="p-news-detail__pagination-link">
-                ＜前の記事へ
-              </a>
+              <div class="p-news-archive__more">
+                <a href="#" class="p-news-archive__more-link">
+                  詳細を見る
+                </a>
+              </div>
+            </article>
 
-              <a href="#" class="p-news-detail__pagination-link">
-                次の記事＞
-              </a>
-            </nav>
-          </article>
+            <article class="p-news-archive__item">
+              <div class="p-news-archive__meta">
+                <span class="p-news-archive__category">ブログ</span>
+                <time class="p-news-archive__date" datetime="2026-08-20">
+                  2026.08.20
+                </time>
+              </div>
+
+              <h2 class="p-news-archive__title">
+                <a href="#" class="p-news-archive__title-link">
+                  ブログタイトルが入ります
+                </a>
+              </h2>
+
+              <p class="p-news-archive__excerpt">
+                ブログ記事の本文がここに入ります。一覧ページでは記事内容の一部を表示し、
+                続きは詳細ページからご覧いただけます。
+              </p>
+
+              <div class="p-news-archive__more">
+                <a href="#" class="p-news-archive__more-link">
+                  詳細を見る
+                </a>
+              </div>
+            </article>
+
+            <article class="p-news-archive__item">
+              <div class="p-news-archive__meta">
+                <span class="p-news-archive__category">お知らせ</span>
+                <time class="p-news-archive__date" datetime="2026-08-01">
+                  2026.08.01
+                </time>
+              </div>
+
+              <h2 class="p-news-archive__title">
+                <a href="#" class="p-news-archive__title-link">
+                  お知らせタイトルが入ります
+                </a>
+              </h2>
+
+              <p class="p-news-archive__excerpt">
+                お知らせの内容がここに入ります。最新情報や施工に関する情報などを
+                随時更新してまいります。
+              </p>
+
+              <div class="p-news-archive__more">
+                <a href="#" class="p-news-archive__more-link">
+                  詳細を見る
+                </a>
+              </div>
+            </article>
+
+          </div>
+
+          <nav class="p-news-archive__pagination">
+            <span class="p-news-archive__page-number is-current">1</span>
+            <a href="#" class="p-news-archive__page-number">2</a>
+            <a href="#" class="p-news-archive__page-number">3</a>
+            <a href="#" class="p-news-archive__page-next">次へ ＞</a>
+          </nav>
         </main>
 
-        <aside class="p-news-detail__sidebar">
-          <form class="p-news-detail__search" action="#" method="get">
-            <input type="search" name="s" class="p-news-detail__search-input" placeholder="キーワードを入力">
-            <button type="submit" class="p-news-detail__search-button">
+        <aside class="p-news-archive__sidebar">
+          <form class="p-news-archive__search" action="#" method="get">
+            <input type="search" name="s" class="p-news-archive__search-input" placeholder="キーワードを入力">
+            <button type="submit" class="p-news-archive__search-button">
               検索
             </button>
           </form>
 
-          <div class="p-news-detail__sidebar-block">
-            <h2 class="p-news-detail__sidebar-title">
+          <div class="p-news-archive__sidebar-block">
+            <h2 class="p-news-archive__sidebar-title">
               最近の投稿
             </h2>
 
-            <ul class="p-news-detail__sidebar-list">
-              <li class="p-news-detail__sidebar-item">
-                <a href="#" class="p-news-detail__sidebar-link">
+            <ul class="p-news-archive__sidebar-list">
+              <li class="p-news-archive__sidebar-item">
+                <a href="#" class="p-news-archive__sidebar-link">
                   ホームページをリニューアルしました
                 </a>
               </li>
             </ul>
           </div>
 
-          <div class="p-news-detail__sidebar-block">
-            <h2 class="p-news-detail__sidebar-title">
+          <div class="p-news-archive__sidebar-block">
+            <h2 class="p-news-archive__sidebar-title">
               アーカイブ
             </h2>
 
-            <ul class="p-news-detail__sidebar-list">
-              <li class="p-news-detail__sidebar-item">
-                <a href="#" class="p-news-detail__sidebar-link">
+            <ul class="p-news-archive__sidebar-list">
+              <li class="p-news-archive__sidebar-item">
+                <a href="#" class="p-news-archive__sidebar-link">
                   ・2026 年 9 月
                 </a>
               </li>
             </ul>
           </div>
 
-          <div class="p-news-detail__sidebar-block">
-            <h2 class="p-news-detail__sidebar-title">
+          <div class="p-news-archive__sidebar-block">
+            <h2 class="p-news-archive__sidebar-title">
               カテゴリー
             </h2>
 
-            <ul class="p-news-detail__sidebar-list">
-              <li class="p-news-detail__sidebar-item">
-                <a href="#" class="p-news-detail__sidebar-link">
+            <ul class="p-news-archive__sidebar-list">
+              <li class="p-news-archive__sidebar-item">
+                <a href="#" class="p-news-archive__sidebar-link">
                   ・お知らせ
                 </a>
               </li>
 
-              <li class="p-news-detail__sidebar-item">
-                <a href="#" class="p-news-detail__sidebar-link">
+              <li class="p-news-archive__sidebar-item">
+                <a href="#" class="p-news-archive__sidebar-link">
                   ・ブログ
                 </a>
               </li>
